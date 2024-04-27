@@ -1,207 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Car Rental System</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <nav>
-      <a class="nav-brand" href="#">
-        <img src="images/logo/nav-logo.png" alt="Nav Logo" class="nav-logo" />
-        <span class="nav-brand-text">Brand Name</span>
-        <span id="toggle-icon"><i class="fas fa-bars toggle-icon"></i></span>
-      </a>
-      <ul class="nav-links">
-        <li class="nav-link">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="nav-link">
-          <a href="#">Cars</a>
-        </li>
-        <li class="nav-link">
-          <a href="about.html">About</a>
-        </li>
-        <li class="nav-link">
-          <a href="contact-us.html">Contact Us</a>
-        </li>
-        <li class="nav-link"><a href="#">Login/Register</a></li>
-        <li class="nav-link" id="dropdown-open">
-          <a href="#">John Doe</a>
-          <i class="fa-solid fa-caret-down"></i>
-        </li>
 
-        <div class="profile-dropdown-menu">
-          <div class="profile-info">
-            <img
-              src="images/default_profile_icon.jpg"
-              alt="Default Profile Icon"
-            />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Rental System</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav>
+    <a class="nav-brand" href="#">
+      <img src="images/logo/nav-logo.png" alt="Nav Logo" class="nav-logo" />
+      <span class="nav-brand-text">Brand Name</span>
+      <span id="toggle-icon"><i class="fas fa-bars toggle-icon"></i></span>
+    </a>
+    <ul class="nav-links">
+      <li class="nav-link">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="nav-link">
+        <a href="#">Cars</a>
+      </li>
+      <li class="nav-link">
+        <a href="about.html">About</a>
+      </li>
+      <li class="nav-link">
+        <a href="contact-us.html">Contact Us</a>
+      </li>
+      <li class="nav-link"><a href="#">Login/Register</a></li>
+      <li class="nav-link" id="dropdown-open">
+        <a href="#">John Doe</a>
+        <i class="fa-solid fa-caret-down"></i>
+      </li>
+
+      <div class="profile-dropdown-menu">
+        <div class="profile-info">
+          <img src="images/default_profile_icon.jpg" alt="Default Profile Icon" />
+          <h4>John Doe</h4>
+        </div>
+        <hr />
+        <div class="dropdown-items">
+          <div class="dropdown-item"><a href="">Profile</a></div>
+          <div class="dropdown-item"><a href="">Account Settings</a></div>
+          <div class="dropdown-item"><a href="">Logout</a></div>
+        </div>
+      </div>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="car-container">
+      <div class="carousel-container">
+        <div class="carousel-previous">
+          <button id="carousel-button-prev"><i class="fas fa-caret-left"></i></button>
+        </div>
+        <div class="carousel-images">
+          <div class="main-car-image active-car-image">
+            <img src="images/car_images/honda1.jpg" alt="Car Iamge"
+              class="carousel-car-image active-carousel-car-image" />
+            <img src="images/car_images/honda2.jpg" alt="Car Iamge" class="carousel-car-image" />
+            <img src="images/car_images/honda3.jpg" alt="Car Iamge" class="carousel-car-image" />
+            <img src="images/car_images/honda4.jpg" alt="Car Iamge" class="carousel-car-image" />
+          </div>
+
+
+
+          <!-- <div class="car-carousel-images-container">
+            <div class="car-carousel-image active-car-image">
+              <img src="https://placehold.co/100" alt="" />
+            </div>
+
+            <div class="car-carousel-image active-car-image">
+              <img src="https://placehold.co/100" alt="" />
+            </div>
+
+            <div class="car-carousel-image active-car-image">
+              <img src="https://placehold.co/100" alt="" />
+            </div>
+
+            <div class="car-carousel-image active-car-image">
+              <img src="https://placehold.co/100" alt="" />
+            </div>
+          </div> -->
+
+        </div>
+        <div class="carousel-next">
+          <button id="carousel-button-next"><i class="fas fa-caret-right"></i></button>
+        </div>
+      </div>
+      <div class="car-info-container">
+        <div class="car-title">
+          <h2>Honda Civic</h2>
+        </div>
+
+        <div class="car-table-info">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Model</th>
+                <th>Brand</th>
+                <th>Year</th>
+                <th>Price per Day</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Automatic</td>
+                <td>PA12SN0</td>
+                <td>Honda</td>
+                <td>1999</td>
+                <td>₱500.00</td>
+              </tr>
+            </tbody>
+          </table>
+
+        </div>
+        <div class="car-details-tab">
+          <div class="car-detail-tab-header">
+            <div class="tab-item-header tab-item-header-active" id="car-description-header">
+              <p>Car Description</p>
+            </div>
+            <div class="tab-item-header" id="car-accessories-header">
+              <p>Car Accessories</p>
+            </div>
+          </div>
+          <div class="car-detail-tab-content">
+            <div class="tab-item-content tab-item-content-active" id="car-description-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Harum rem alias expedita quae sunt dolore ipsa veniam,
+                tempore ducimus sit ipsum iusto corporis amet dolorem
+                impedit laudantium tempora earum! Quam.
+              </p>
+            </div>
+            <div class="tab-item-content" id="car-accessories-content">
+              <ul>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+                <li>Accessories 1</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="car-other-info-container">
+          <button class="rent-car-btn">Rent this Car</button>
+          <p>265 people rent this Car</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="car-review-container">
+      <h3 class="car-review-title">Car Reviews</h3>
+      <div class="reviews">
+        <div class="review-item">
+          <div class="review-user-image">
+            <img src="https://placehold.co/100" alt="User Iamge">
+          </div>
+          <div class="review-content">
             <h4>John Doe</h4>
-          </div>
-          <hr />
-          <div class="dropdown-items">
-            <div class="dropdown-item"><a href="">Profile</a></div>
-            <div class="dropdown-item"><a href="">Account Settings</a></div>
-            <div class="dropdown-item"><a href="">Logout</a></div>
-          </div>
-        </div>
-      </ul>
-    </nav>
-
-    <main>
-      <div class="car-container">
-        <div class="carousel-container">
-          <div class="carousel-previous">
-            <button><i class="fas fa-caret-left"></i></button>
-          </div>
-          <div class="carousel-images">
-            <div class="main-car-image active-car-image">
-              <img src="https://placehold.co/600x400" alt="" />
-            </div>
-            <div class="car-carousel-images-container">
-              <div class="car-carousel-image active-car-image">
-                <img src="https://placehold.co/100" alt="" />
+            <p id="review-date">April 27, 2024</p>
+            <p id="review-comment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus molestiae explicabo
+              aliquid excepturi ipsa sapiente aut sequi voluptate tempore voluptatum sit odio magni eos consectetur,
+              autem quos inventore blanditiis beatae veniam! Laudantium excepturi quibusdam saepe sit, eos reprehenderit
+              optio voluptas nihil enim, nesciunt cumque ex molestias ab repudiandae deserunt alias!</p>
+            <div class="review-stars">
+              <div class="car-review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
               </div>
-
-              <div class="car-carousel-image active-car-image">
-                <img src="https://placehold.co/100" alt="" />
-              </div>
-
-              <div class="car-carousel-image active-car-image">
-                <img src="https://placehold.co/100" alt="" />
-              </div>
-
-              <div class="car-carousel-image active-car-image">
-                <img src="https://placehold.co/100" alt="" />
+              <div class="car-review-rating">
+                <p>4.5</p>
               </div>
             </div>
           </div>
-          <div class="carousel-next">
-            <button><i class="fas fa-caret-right"></i></button>
+        </div>
+
+        <div class="review-item">
+          <div class="review-user-image">
+            <img src="https://placehold.co/100" alt="User Iamge">
+          </div>
+          <div class="review-content">
+            <h4>John Doe</h4>
+            <p id="review-date">April 27, 2024</p>
+            <p id="review-comment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus molestiae explicabo
+              aliquid excepturi ipsa sapiente aut sequi voluptate tempore voluptatum sit odio magni eos consectetur,
+              autem quos inventore blanditiis beatae veniam! Laudantium excepturi quibusdam saepe sit, eos reprehenderit
+              optio voluptas nihil enim, nesciunt cumque ex molestias ab repudiandae deserunt alias!</p>
+            <div class="review-stars">
+              <div class="car-review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+              <div class="car-review-rating">
+                <p>4.5</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="car-info-container">
-          <div class="car-title">
-            <h2>Honda Civic</h2>
+
+        <div class="review-item">
+          <div class="review-user-image">
+            <img src="https://placehold.co/100" alt="User Iamge">
           </div>
-
-          <div class="car-table-info">
-            <table>
-              <thead>
-                <tr>
-                  <th>Category</th>
-                  <th>Model</th>
-                  <th>Brand</th>
-                  <th>Year</th>
-                  <th>Price per Day</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Automatic</td>
-                  <td>PA12SN0</td>
-                  <td>Honda</td>
-                  <td>1999</td>
-                  <td>₱500.00</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <div class="car-details-tab">
-              <div class="car-detail-tab-header">
-                <div class="tab-item-header tab-item-header-active">
-                  <p>Car Description</p>
-                </div>
-                <div class="tab-item-header">
-                  <p>Car Accessories</p>
-                </div>
+          <div class="review-content">
+            <h4>John Doe</h4>
+            <p id="review-date">April 27, 2024</p>
+            <p id="review-comment">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus molestiae explicabo
+              aliquid excepturi ipsa sapiente aut sequi voluptate tempore voluptatum sit odio magni eos consectetur,
+              autem quos inventore blanditiis beatae veniam! Laudantium excepturi quibusdam saepe sit, eos reprehenderit
+              optio voluptas nihil enim, nesciunt cumque ex molestias ab repudiandae deserunt alias!</p>
+            <div class="review-stars">
+              <div class="car-review-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
               </div>
-              <div class="car-detail-tab-content">
-                <div class="tab-item-content tab-item-content-active">
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Harum rem alias expedita quae sunt dolore ipsa veniam,
-                    tempore ducimus sit ipsum iusto corporis amet dolorem
-                    impedit laudantium tempora earum! Quam.
-                  </p>
-                </div>
-                <div class="tab-item-content">
-                  <ul>
-                    <li>Accessories 1</li>
-                    <li>Accessories 1</li>
-                    <li>Accessories 1</li>
-                    <li>Accessories 1</li>
-                    <li>Accessories 1</li>
-                  </ul>
-                </div>
+              <div class="car-review-rating">
+                <p>4.5</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </main>
 
-    <footer>
-      <div class="footer-container">
-        <div class="footer-section">
-          <div class="footer-brand-container">
-            <h2>Brand Name</h2>
-          </div>
-          <div class="social-media-container">
-            <div class="social-media-item">
-              <i class="fa-brands fa-facebook fa-2x"></i>
-            </div>
-            <div class="social-media-item">
-              <i class="fa-brands fa-twitter fa-2x"></i>
-            </div>
-            <div class="social-media-item">
-              <i class="fa-brands fa-instagram fa-2x"></i>
-            </div>
-            <div class="social-media-item">
-              <i class="fa-brands fa-telegram fa-2x"></i>
-            </div>
-          </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <div class="footer-brand-container">
+          <h2>Brand Name</h2>
         </div>
-        <div class="footer-section">
-          <h4>Links</h4>
-          <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
-        </div>
-        <div class="footer-section">
-          <h4>Links</h4>
-          <ul>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-            <li><a href="#">Link</a></li>
-          </ul>
+        <div class="social-media-container">
+          <div class="social-media-item">
+            <i class="fa-brands fa-facebook fa-2x"></i>
+          </div>
+          <div class="social-media-item">
+            <i class="fa-brands fa-twitter fa-2x"></i>
+          </div>
+          <div class="social-media-item">
+            <i class="fa-brands fa-instagram fa-2x"></i>
+          </div>
+          <div class="social-media-item">
+            <i class="fa-brands fa-telegram fa-2x"></i>
+          </div>
         </div>
       </div>
-      <div class="copyright-section">
-        <p>Copyright 2024 Brand Name</p>
+      <div class="footer-section">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
       </div>
-    </footer>
+      <div class="footer-section">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+          <li><a href="#">Link</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright-section">
+      <p>Copyright 2024 Brand Name</p>
+    </div>
+  </footer>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
-      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+  <div class="rent-car-modal">
+    <div class="rent-car-modal-header">
+      <p>Rent this Car</p>
+      <button class="rent-car-modal-close"><i class="fas fa-x"></i></button>
+    </div>
+    <div class="rent-car-modal-body">
+      <div class="row-1">
+        <div class="rent-form-group">
+          <label>Start Date</label>
+          <input type="date" name="start_date" id="start_date">
+        </div>
+        <div class="rent-form-group">
+          <label>End Date</label>
+          <input type="date" name="end_date" id="end_date">
+        </div>
+      </div>
+      <div class="row-2">
+        <div class="rent-form-group">
+          <label>Rent per Day</label>
+          <input type="text" name="rent_per_day" id="rent_per_day" value="₱ 500.00" disabled>
+        </div>
 
-    <script src="js/script.js"></script>
-  </body>
+        <div class="rent-form-group">
+          <label>X</label>
+        </div>
+
+        <div class="rent-form-group">
+          <label>Days</label>
+          <input type="text" name="rent_per_day" id="rent_per_day" value="0" disabled>
+        </div>
+
+        <div class="rent-form-group">
+          <label>Total Amount</label>
+          <input type="text" name="total_amount" id="total_amount" value="₱ 0.00" disabled>
+        </div>
+      </div>
+    </div>
+    <div class="rent-car-modal-footer">
+      <div class="row-1">
+        <button class="close-rent-modal rent-car-modal-close">Close</button>
+        <button class="rent-car-save-btn">Rent</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="js/script.js"></script>
+</body>
+
 </html>

@@ -70,4 +70,53 @@ $(document).ready(function () {
       filterText.text("Price High to Low");
     }
   });
+
+  //car tabs
+  $("#car-accessories-header").click(function () {
+    $(this).addClass("tab-item-header-active");
+    $("#car-description-header").removeClass("tab-item-header-active");
+    $("#car-description-content").hide();
+    $("#car-accessories-content").show();
+  });
+
+  $("#car-description-header").click(function () {
+    $(this).addClass("tab-item-header-active");
+    $("#car-accessories-header").removeClass("tab-item-header-active");
+    $("#car-accessories-content").hide();
+    $("#car-description-content").show();
+  });
+
+  //carousel
+  $('#carousel-button-next').click(function () {
+    let curImg = $(".active-carousel-car-image");
+    let nextImg = curImg.next();
+
+    if (nextImg.length) {
+      $(this).css('cursor', 'pointer');
+      curImg.removeClass("active-carousel-car-image");
+      nextImg.addClass("active-carousel-car-image");
+    }
+  });
+
+  $('#carousel-button-prev').click(function () {
+    let curImg = $(".active-carousel-car-image");
+    let prevImg = curImg.prev();
+
+    if (prevImg.length) {
+      $(this).css('cursor', 'pointer');
+      curImg.removeClass("active-carousel-car-image");
+      prevImg.addClass("active-carousel-car-image");
+    }
+  });
+
+  //Rent Car Modal
+  $(".rent-car-btn").click(function () {
+
+    $(".rent-car-modal").show();
+  });
+
+  $(".rent-car-modal-close").click(function () {
+
+    $(".rent-car-modal").hide();
+  });
 });

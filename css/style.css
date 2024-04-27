@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
   font-family: "Poppins", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-nav{
+body {
+  position: relative;
+}
+
+nav {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -16,7 +20,7 @@ nav{
 
 }
 
-nav .nav-brand{
+nav .nav-brand {
   flex: 1;
   display: flex;
   align-items: center;
@@ -24,21 +28,21 @@ nav .nav-brand{
   gap: 10px;
 }
 
-nav .nav-brand{
+nav .nav-brand {
   text-decoration: none;
 }
 
-nav .nav-brand-text{
+nav .nav-brand-text {
   font-size: 30px;
   font-weight: 550;
   color: rgb(241, 81, 35);
 }
 
-nav .nav-logo{
+nav .nav-logo {
   height: 50px;
 }
 
-nav .nav-links{
+nav .nav-links {
   flex: 5;
   display: flex;
   align-items: start;
@@ -47,13 +51,13 @@ nav .nav-links{
   padding: 0 8px;
 }
 
-nav .nav-link{
+nav .nav-link {
   padding: 10px 0;
   list-style: none;
-  
+
 }
 
-nav .nav-link a{
+nav .nav-link a {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
@@ -62,15 +66,15 @@ nav .nav-link a{
   transition: 0.3s ease-out;
 }
 
-nav .nav-link a:hover{
+nav .nav-link a:hover {
   color: rgb(241, 81, 35);
 }
 
-nav #toggle-icon{
+nav #toggle-icon {
   display: none;
 }
 
-nav ul li:last-child{
+nav ul li:last-child {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -78,7 +82,7 @@ nav ul li:last-child{
 }
 
 
-.profile-dropdown-menu{
+.profile-dropdown-menu {
   position: absolute;
   top: 50px;
   right: 5px;
@@ -86,19 +90,19 @@ nav ul li:last-child{
   max-width: 200px;
   max-height: 0;
   overflow: hidden;
-  transition:  max-height 0.3s;
+  transition: max-height 0.3s;
 }
 
-nav #dropdown-open{
+nav #dropdown-open {
   cursor: pointer;
 }
 
-.profile-dropdown-menu-open{
+.profile-dropdown-menu-open {
   max-height: 200px;
   border: 1px solid #979797;
 }
 
-.profile-dropdown-menu .profile-info{
+.profile-dropdown-menu .profile-info {
   position: relative;
   display: flex;
   align-items: center;
@@ -108,18 +112,18 @@ nav #dropdown-open{
   padding: 10px;
 }
 
-.profile-dropdown-menu .profile-info img{
+.profile-dropdown-menu .profile-info img {
   border-radius: 50%;
   height: 40px;
   border: 2px solid #000000;
 }
 
-.profile-dropdown-menu .profile-info h4{
+.profile-dropdown-menu .profile-info h4 {
   font-weight: 500;
   font-size: 18px;
 }
 
-.profile-dropdown-menu hr{
+.profile-dropdown-menu hr {
   margin-top: 5px;
   margin-bottom: 2px;
 }
@@ -133,7 +137,7 @@ nav #dropdown-open{
   padding: 10px;
 }
 
-.profile-dropdown-menu .dropdown-items .dropdown-item a{
+.profile-dropdown-menu .dropdown-items .dropdown-item a {
   text-decoration: none;
   font-size: 18px;
   color: #000000;
@@ -142,17 +146,17 @@ nav #dropdown-open{
 
 }
 
-.profile-dropdown-menu .dropdown-items .dropdown-item a:hover{
+.profile-dropdown-menu .dropdown-items .dropdown-item a:hover {
   color: rgb(241, 81, 35);
 }
 
-#toggle-icon{
+#toggle-icon {
   color: #000000;
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px)  {
-  nav{
+@media only screen and (max-width: 600px) {
+  nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -162,24 +166,24 @@ nav #dropdown-open{
     padding: 5px 3px;
   }
 
-  nav .nav-brand{
+  nav .nav-brand {
     display: flex;
     width: 100%;
     padding: 5px;
   }
 
-  nav .nav-brand-text{
+  nav .nav-brand-text {
     font-size: 25px;
     flex: 5;
   }
 
-  nav .nav-brand .nav-logo{
+  nav .nav-brand .nav-logo {
     height: 40px;
     width: 5px;
     flex: 1;
   }
 
-  nav .nav-brand #toggle-icon{
+  nav .nav-brand #toggle-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -187,11 +191,11 @@ nav #dropdown-open{
     cursor: pointer;
   }
 
-  nav .nav-links{
+  nav .nav-links {
     display: none;
   }
- 
-  nav .nav-links-open{
+
+  nav .nav-links-open {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -201,13 +205,14 @@ nav #dropdown-open{
     width: 100%;
     margin: 0;
     padding: 0;
-  
+
   }
-  nav .nav-links .nav-link{
+
+  nav .nav-links .nav-link {
     padding: 10px 5px;
   }
 
-  .profile-dropdown-menu{
+  .profile-dropdown-menu {
     position: absolute;
     top: 340px;
     left: 10px;
@@ -215,11 +220,11 @@ nav #dropdown-open{
     max-width: 0;
     max-height: 200px;
     overflow: hidden;
-    transition:  max-height 0.3s;
-   
+    transition: max-height 0.3s;
+
   }
 
-  .profile-dropdown-menu-open{
+  .profile-dropdown-menu-open {
     max-width: 200px;
     border: 1px solid #979797;
   }
@@ -227,9 +232,10 @@ nav #dropdown-open{
 
 
 }
+
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) and (max-width : 768px) {
-  nav{
+  nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -239,24 +245,24 @@ nav #dropdown-open{
     padding: 5px 3px;
   }
 
-  nav .nav-brand{
+  nav .nav-brand {
     display: flex;
     width: 100%;
     padding: 5px;
   }
 
-  nav .nav-brand-text{
+  nav .nav-brand-text {
     font-size: 30px;
     flex: 4;
   }
 
-  nav .nav-brand .nav-logo{
+  nav .nav-brand .nav-logo {
     height: 80px;
     width: 5px;
     flex: 1;
   }
 
-  nav .nav-brand #toggle-icon{
+  nav .nav-brand #toggle-icon {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -266,11 +272,11 @@ nav #dropdown-open{
     font-size: 30px;
   }
 
-  nav .nav-links{
+  nav .nav-links {
     display: none;
   }
- 
-  nav .nav-links-open{
+
+  nav .nav-links-open {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -280,13 +286,14 @@ nav #dropdown-open{
     width: 100%;
     margin: 0;
     padding: 0 0 0 8px;
-  
+
   }
-  nav .nav-links .nav-link{
+
+  nav .nav-links .nav-link {
     padding: 10px 5px;
   }
 
-  .profile-dropdown-menu{
+  .profile-dropdown-menu {
     position: absolute;
     top: 345px;
     left: 10px;
@@ -294,11 +301,11 @@ nav #dropdown-open{
     max-width: 0;
     max-height: 200px;
     overflow: hidden;
-    transition:  max-height 0.3s;
-   
+    transition: max-height 0.3s;
+
   }
 
-  .profile-dropdown-menu-open{
+  .profile-dropdown-menu-open {
     max-width: 200px;
     border: 1px solid #979797;
   }
@@ -306,7 +313,7 @@ nav #dropdown-open{
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width : 992px) {
-  nav{
+  nav {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -316,24 +323,24 @@ nav #dropdown-open{
     padding: 5px 3px;
   }
 
-  nav .nav-brand{
+  nav .nav-brand {
     display: flex;
     width: 100%;
     padding: 5px;
   }
 
-  nav .nav-brand-text{
+  nav .nav-brand-text {
     font-size: 30px;
     flex: 4;
   }
 
-  nav .nav-brand .nav-logo{
+  nav .nav-brand .nav-logo {
     height: 60px;
     width: 5px;
     flex: 1;
   }
 
-  nav .nav-brand #toggle-icon{
+  nav .nav-brand #toggle-icon {
     display: flex;
     align-items: center;
     justify-content: end;
@@ -343,11 +350,11 @@ nav #dropdown-open{
     font-size: 30px;
   }
 
-  nav .nav-links{
+  nav .nav-links {
     display: none;
   }
- 
-  nav .nav-links-open{
+
+  nav .nav-links-open {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -357,14 +364,15 @@ nav #dropdown-open{
     width: 100%;
     margin: 0;
     padding: 0 0 0 8px;
-  
+
   }
-  nav .nav-links .nav-link{
+
+  nav .nav-links .nav-link {
     padding: 10px 5px;
   }
 }
 
-.hero{
+.hero {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -372,14 +380,15 @@ nav #dropdown-open{
   padding: 8px 10px;
 }
 
-.hero .hero-image{
+.hero .hero-image {
   flex: 1;
 }
-.hero .hero-image img{
+
+.hero .hero-image img {
   width: 900px;
 }
 
-.hero .hero-text{
+.hero .hero-text {
   flex: 2;
   display: flex;
   flex-direction: column;
@@ -387,19 +396,20 @@ nav #dropdown-open{
   justify-content: center;
   padding: 0 10px;
 }
-.hero .hero-text #hero-text-main{
+
+.hero .hero-text #hero-text-main {
   font-size: 70px;
   text-align: center;
   font-weight: 650;
   color: #0D0D0D;
 }
 
-.hero .hero-text #hero-text-main #hero-text-highlight{
+.hero .hero-text #hero-text-main #hero-text-highlight {
   font-weight: 900;
   color: rgb(241, 81, 35);
 }
 
-.hero .hero-text #hero-text-sub{
+.hero .hero-text #hero-text-sub {
   font-size: 30px;
   text-align: justify;
   text-justify: inter-word;
@@ -412,7 +422,8 @@ nav #dropdown-open{
 .hero .hero-text .hero-link-container {
   margin: 10px 20px;
 }
-.hero .hero-text .hero-link-container .main-button{
+
+.hero .hero-text .hero-link-container .main-button {
   background-color: rgb(241, 81, 35);
   border: none;
   outline: none;
@@ -422,7 +433,7 @@ nav #dropdown-open{
   margin: 10px 0;
 }
 
-.hero .hero-text .hero-link-container .hero-link{
+.hero .hero-text .hero-link-container .hero-link {
   font-size: 28px;
   font-weight: 500;
   text-decoration: none;
@@ -434,44 +445,45 @@ nav #dropdown-open{
 
   transition: 0.3s ease-out;
 }
-.hero .hero-text .hero-link:hover{
+
+.hero .hero-text .hero-link:hover {
   background-color: rgb(241, 81, 35);
   color: #ffff;
 }
 
 
-@media only screen and (max-width: 600px)  {
+@media only screen and (max-width: 600px) {
   main .hero {
     display: flex;
     flex-direction: column;
     margin: 30px 0;
   }
 
-  .hero .hero-text #hero-text-main{
+  .hero .hero-text #hero-text-main {
     font-size: 50px;
     text-align: center;
   }
 
-  .hero .hero-text #hero-text-sub{
+  .hero .hero-text #hero-text-sub {
     font-size: 25px;
   }
 
-  .hero .hero-text .hero-link-container{
+  .hero .hero-text .hero-link-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
 
-  .hero .hero-text .hero-link{
+  .hero .hero-text .hero-link {
     align-self: center;
   }
-  
-  .hero .hero-image{
+
+  .hero .hero-image {
     padding: 0 10px;
   }
 
-  .hero .hero-image img{
+  .hero .hero-image img {
     width: 100%;
   }
 }
@@ -483,37 +495,37 @@ nav #dropdown-open{
     margin: 30px 0;
   }
 
-  .hero .hero-text #hero-text-main{
+  .hero .hero-text #hero-text-main {
     font-size: 50px;
     text-align: center;
   }
 
-  .hero .hero-text #hero-text-sub{
+  .hero .hero-text #hero-text-sub {
     font-size: 25px;
   }
 
-  .hero .hero-text .hero-link-container{
+  .hero .hero-text .hero-link-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
 
-  .hero .hero-text .hero-link{
+  .hero .hero-text .hero-link {
     align-self: center;
   }
-  
-  .hero .hero-image{
+
+  .hero .hero-image {
     padding: 0 10px;
   }
 
-  .hero .hero-image img{
+  .hero .hero-image img {
     width: 100%;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width : 992px) { 
+@media only screen and (min-width: 768px) and (max-width : 992px) {
   main .hero {
     display: flex;
     flex-direction: column;
@@ -522,45 +534,45 @@ nav #dropdown-open{
     justify-content: center;
   }
 
-  .hero .hero-text #hero-text-main{
+  .hero .hero-text #hero-text-main {
     font-size: 55px;
     text-align: center;
     padding: 0 63px;
   }
 
-  .hero .hero-text #hero-text-sub{
+  .hero .hero-text #hero-text-sub {
     font-size: 35px;
   }
 
-  .hero .hero-text .hero-link-container{
+  .hero .hero-text .hero-link-container {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
   }
 
-  .hero .hero-text .hero-link-container .hero-link{
+  .hero .hero-text .hero-link-container .hero-link {
     align-self: center;
     font-size: 35px;
   }
-  
-  .hero .hero-image{
+
+  .hero .hero-image {
     padding: 0 10px;
   }
 
-  .hero .hero-image img{
+  .hero .hero-image img {
     width: 100%;
   }
 }
 
-.about-section{
+.about-section {
   background-color: #0D0D0D;
   color: #ffff;
   margin: 0;
   padding: 30px 10px;
 }
 
-.about-section h3{
+.about-section h3 {
   text-align: center;
   font-size: 45px;
   color: #ffff;
@@ -568,7 +580,7 @@ nav #dropdown-open{
   font-weight: 600;
 }
 
-.about-section p{
+.about-section p {
   text-align: justify;
   text-justify: inter-word;
   padding: 0 80px;
@@ -576,35 +588,35 @@ nav #dropdown-open{
   font-weight: 300;
 }
 
-@media only screen and (max-width : 600px){
-  .about-section h3{
+@media only screen and (max-width : 600px) {
+  .about-section h3 {
     font-size: 40px;
   }
 
-  .about-section p{
+  .about-section p {
     font-size: 18px;
     padding: 0 30px;
   }
 }
 
 @media only screen and (min-width : 600) and (max-width : 767) {
-  .about-section h3{
+  .about-section h3 {
     font-size: 45px;
   }
 
-  .about-section p{
+  .about-section p {
     font-size: 25px;
     padding: 0 30px;
   }
 }
 
-.services-section{
+.services-section {
   background-color: #ffff;
   padding: 20px 0;
   padding-bottom: 61px;
 }
 
-.services-section h3{
+.services-section h3 {
   text-align: center;
   font-size: 50px;
   color: rgb(241, 81, 35);
@@ -612,7 +624,7 @@ nav #dropdown-open{
   padding: 0 30px;
 }
 
-.services-section .card-container{
+.services-section .card-container {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -620,7 +632,7 @@ nav #dropdown-open{
   margin-top: 20px;
 }
 
-.services-section .card-container .card{
+.services-section .card-container .card {
   border: 5px solid rgb(241, 81, 35);
   margin: 0 5px;
   width: 100%;
@@ -630,22 +642,22 @@ nav #dropdown-open{
   background-color: rgb(241, 81, 35);
 }
 
-.services-section .card-container .card .card-image-container img{
+.services-section .card-container .card .card-image-container img {
   width: 400px;
   padding: 8px 10px;
   height: 330px;
 }
 
 
-.services-section .card-container .card .card-title-container h4{
+.services-section .card-container .card .card-title-container h4 {
   font-size: 30px;
   text-align: center;
   font-weight: 500;
   margin: 10px 0;
   color: #ffff;
-} 
+}
 
-.services-section .card-container .card .card-text-container{
+.services-section .card-container .card .card-text-container {
   display: none;
   color: #ffff;
   padding: 10px 30px;
@@ -655,129 +667,130 @@ nav #dropdown-open{
   font-weight: 300;
 }
 
- @media only screen and (max-width : 600px) {
+@media only screen and (max-width : 600px) {
 
-  .services-section h3{
+  .services-section h3 {
     font-size: 40px;
   }
 
-  .services-section .card-container{
+  .services-section .card-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  .services-section .card-container .card .card-title-container h4{
+  .services-section .card-container .card .card-title-container h4 {
     font-size: 30px;
   }
 
-  .services-section .card-container .card{
+  .services-section .card-container .card {
     width: 350px;
   }
 
-  .services-section .card-container .card .card-image-container{
+  .services-section .card-container .card .card-image-container {
     width: 100%;
   }
 
-  .services-section .card-container .card .card-image-container img{
+  .services-section .card-container .card .card-image-container img {
     width: 350px;
     height: 310px;
   }
 
-  .services-section .card-container .card .card-text-container{
+  .services-section .card-container .card .card-text-container {
     font-size: 18px;
   }
- }
+}
 
- @media only screen and (min-width : 600px) and (max-width :768px){
-  .services-section h3{
+@media only screen and (min-width : 600px) and (max-width :768px) {
+  .services-section h3 {
     font-size: 45px;
   }
 
-  .services-section .card-container{
+  .services-section .card-container {
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  .services-section .card-container .card .card-title-container h4{
+  .services-section .card-container .card .card-title-container h4 {
     font-size: 30px;
   }
 
-  .services-section .card-container .card{
+  .services-section .card-container .card {
     width: 600px;
     height: 500px;
   }
 
-  .services-section .card-container .card .card-image-container{
+  .services-section .card-container .card .card-image-container {
     width: 100%;
   }
 
-  .services-section .card-container .card .card-image-container img{
+  .services-section .card-container .card .card-image-container img {
     width: 600px;
     height: 410px;
   }
 
-  .services-section .card-container .card .card-text-container{
+  .services-section .card-container .card .card-text-container {
     font-size: 28px;
   }
- }
+}
 
- footer .footer-container{
+footer .footer-container {
   background-color: #0D0D0D;
   color: #ffff;
   display: flex;
   align-items: start;
   justify-content: space-around;
   padding: 40px 20px;
- }
+}
 
- .footer-container .footer-section{
+.footer-container .footer-section {
   flex: 1;
- }
+}
 
- .footer-container .footer-section .footer-brand-container h2{
-    font-size: 30px;
-    font-weight: 550;
-    color: rgb(241, 81, 35);
- }
+.footer-container .footer-section .footer-brand-container h2 {
+  font-size: 30px;
+  font-weight: 550;
+  color: rgb(241, 81, 35);
+}
 
- .footer-container .footer-section .social-media-container{
+.footer-container .footer-section .social-media-container {
   display: flex;
   align-items: center;
   justify-content: start;
   gap: 10px;
   margin: 5px 0;
- }
- .footer-container .footer-section .social-media-container .social-media-item{
-  padding: 5px;
- }
+}
 
- .footer-container .footer-section .social-media-container .social-media-item i{
+.footer-container .footer-section .social-media-container .social-media-item {
+  padding: 5px;
+}
+
+.footer-container .footer-section .social-media-container .social-media-item i {
   color: #ffff;
   border: 1px solid;
   border-radius: 25px;
   padding: 7px;
   cursor: pointer;
   transition: 0.3s ease-out;
- }
+}
 
- .footer-container .footer-section .social-media-container .social-media-item i:hover{
+.footer-container .footer-section .social-media-container .social-media-item i:hover {
   background-color: rgb(241, 81, 35);
- }
+}
 
-.footer-section h4{
+.footer-section h4 {
   font-size: 25px;
   text-align: center;
   font-weight: 400;
 }
 
-.footer-section ul{
+.footer-section ul {
   list-style: none;
   text-align: center;
 }
 
-.footer-section li a{
+.footer-section li a {
   text-decoration: none;
   color: #ffff;
   font-size: 18px;
@@ -786,84 +799,84 @@ nav #dropdown-open{
   transition: 0.3s ease-out;
 }
 
-.footer-section li a:hover{
+.footer-section li a:hover {
   color: rgb(241, 81, 35);
 }
 
-.copyright-section{
+.copyright-section {
   text-align: center;
   background-color: #2b2828;
   padding: 30px 0;
 }
 
-.copyright-section p{
+.copyright-section p {
   color: #ffff;
   font-size: 20px;
 }
 
 @media only screen and (max-width : 600px) {
-  footer .footer-container{
+  footer .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  footer .footer-container .footer-section{
+  footer .footer-container .footer-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  footer .footer-container .footer-section .footer-brand-container{
+  footer .footer-container .footer-section .footer-brand-container {
     text-align: center;
   }
 
-  footer .footer-container .footer-section h4{
+  footer .footer-container .footer-section h4 {
     margin-top: 8px;
   }
 
 }
 
 @media only screen and (min-width : 600px) and (max-width : 768px) {
-  footer .footer-container{
+  footer .footer-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  footer .footer-container .footer-section{
+  footer .footer-container .footer-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  footer .footer-container .footer-section .footer-brand-container h4{
+  footer .footer-container .footer-section .footer-brand-container h4 {
     font-size: 40px;
   }
 
-  footer .footer-container .footer-section .footer-brand-container{
+  footer .footer-container .footer-section .footer-brand-container {
     text-align: center;
   }
 
-  footer .footer-container .footer-section h4{
+  footer .footer-container .footer-section h4 {
     margin-top: 8px;
   }
 
-  footer .footer-container .footer-section h4{
+  footer .footer-container .footer-section h4 {
     font-size: 30px;
   }
 
-  footer .footer-container .footer-section li a{
+  footer .footer-container .footer-section li a {
     font-size: 25px;
   }
 }
 
 /* About Page  */
-.about-page-section{
+.about-page-section {
   padding: 50px 10px;
 }
 
@@ -871,7 +884,7 @@ nav #dropdown-open{
   margin: 50px 5px;
 }
 
-.about-page-section .about-title-container h3{
+.about-page-section .about-title-container h3 {
   font-size: 50px;
   text-align: center;
   color: rgb(241, 81, 35);
@@ -883,35 +896,36 @@ nav #dropdown-open{
   padding: 0 30px;
 }
 
-.about-page-section .about-text-container p{
+.about-page-section .about-text-container p {
   font-size: 30px;
   font-weight: 300;
   text-align: justify;
   text-justify: inter-word;
 }
+
 /* About Page */
 
 /* Contact us Page */
-.contactus-container{
+.contactus-container {
   padding: 10px 10px;
   margin-bottom: 100px;
 }
 
-.contactus-container .contactus-title-container{
+.contactus-container .contactus-title-container {
   margin: 50px 5px;
 }
 
-.contactus-container .contactus-title-container h3{
+.contactus-container .contactus-title-container h3 {
   font-size: 50px;
   text-align: center;
   color: rgb(241, 81, 35);
 }
 
-.contactus-container .contactus-form-container{
+.contactus-container .contactus-form-container {
   margin: 10px;
 }
 
-.contactus-container .contactus-form-container .user-datas{
+.contactus-container .contactus-form-container .user-datas {
   display: flex;
   margin: 10px 100px;
   padding: 10px 100px;
@@ -920,7 +934,7 @@ nav #dropdown-open{
   gap: 10px;
 }
 
-.contactus-container .contactus-form-container .user-datas .user-data{
+.contactus-container .contactus-form-container .user-datas .user-data {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -929,13 +943,13 @@ nav #dropdown-open{
   padding: 10px 30px;
 }
 
-.contactus-container .contactus-form-container .user-datas .user-data label{
+.contactus-container .contactus-form-container .user-datas .user-data label {
   font-size: 25px;
   font-weight: 600;
   color: rgb(241, 81, 35);
 }
 
-.contactus-container .contactus-form-container .user-datas .user-data .contactus-input{
+.contactus-container .contactus-form-container .user-datas .user-data .contactus-input {
   width: 100%;
   height: 50px;
   border: 2px solid;
@@ -945,20 +959,21 @@ nav #dropdown-open{
   font-weight: 400;
 }
 
-.contactus-container .message-container{
+.contactus-container .message-container {
   padding: 0 230px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.contactus-container .message-container label{
+
+.contactus-container .message-container label {
   font-size: 25px;
   font-weight: 600;
   color: rgb(241, 81, 35);
 }
 
-.contactus-container .message-container textarea{
+.contactus-container .message-container textarea {
   resize: none;
   border: 2px solid;
   font-size: 18px;
@@ -969,13 +984,13 @@ nav #dropdown-open{
   font-weight: 400;
 }
 
-.contactus-container .contactus-button-container{
+.contactus-container .contactus-button-container {
   padding: 0 230px;
   float: inline-end;
   margin: 30px 0;
 }
 
-.contactus-container .contactus-button-container button{
+.contactus-container .contactus-button-container button {
   width: 130px;
   font-size: 25px;
   background-color: rgb(253, 251, 251);
@@ -988,42 +1003,43 @@ nav #dropdown-open{
   transition: 0.3s ease-out;
 }
 
-.contactus-container .contactus-button-container button:hover{
+.contactus-container .contactus-button-container button:hover {
   border: 2px solid rgb(241, 81, 35);
   background-color: rgb(241, 81, 35);
   color: #ffff;
 }
 
-@media only screen and (max-width: 600px){
-  .contactus-container .contactus-title-container h3{
+@media only screen and (max-width: 600px) {
+  .contactus-container .contactus-title-container h3 {
     font-size: 30px;
   }
 
-  .contactus-container .contactus-form-container .user-datas{
+  .contactus-container .contactus-form-container .user-datas {
     margin: 5px 0;
     padding: 10px;
     display: flex;
     flex-direction: column;
   }
 
-  .contactus-container .contactus-form-container .user-datas .user-data label{
-    font-size: 18px;
-  }
-  .contactus-container .contactus-form-container .user-datas .user-data .contactus-input{
+  .contactus-container .contactus-form-container .user-datas .user-data label {
     font-size: 18px;
   }
 
-  .contactus-container .message-container{
+  .contactus-container .contactus-form-container .user-datas .user-data .contactus-input {
+    font-size: 18px;
+  }
+
+  .contactus-container .message-container {
     display: flex;
     flex-direction: column;
     padding: 5px 30px;
   }
 
-  .contactus-container .message-container label{
+  .contactus-container .message-container label {
     font-size: 18px;
   }
 
-  .contactus-container .message-container textarea{
+  .contactus-container .message-container textarea {
     font-size: 18px;
     height: 200px;
   }
@@ -1036,43 +1052,44 @@ nav #dropdown-open{
     width: 100%;
   }
 
-  .contactus-container .contactus-button-container button{
+  .contactus-container .contactus-button-container button {
     font-size: 18px;
   }
-  
-  
+
+
 }
 
-@media only screen and (min-width: 600px) and (max-width: 768px){
-  .contactus-container .contactus-title-container h3{
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .contactus-container .contactus-title-container h3 {
     font-size: 30px;
   }
 
-  .contactus-container .contactus-form-container .user-datas{
+  .contactus-container .contactus-form-container .user-datas {
     margin: 5px 0;
     padding: 10px;
     display: flex;
     flex-direction: column;
   }
 
-  .contactus-container .contactus-form-container .user-datas .user-data label{
-    font-size: 18px;
-  }
-  .contactus-container .contactus-form-container .user-datas .user-data .contactus-input{
+  .contactus-container .contactus-form-container .user-datas .user-data label {
     font-size: 18px;
   }
 
-  .contactus-container .message-container{
+  .contactus-container .contactus-form-container .user-datas .user-data .contactus-input {
+    font-size: 18px;
+  }
+
+  .contactus-container .message-container {
     display: flex;
     flex-direction: column;
     padding: 5px 30px;
   }
 
-  .contactus-container .message-container label{
+  .contactus-container .message-container label {
     font-size: 18px;
   }
 
-  .contactus-container .message-container textarea{
+  .contactus-container .message-container textarea {
     font-size: 18px;
     height: 200px;
   }
@@ -1084,17 +1101,18 @@ nav #dropdown-open{
     justify-content: center;
     width: 100%;
   }
-  
+
 
   .contactus-container .contactus-button-container button {
     font-size: 25px;
   }
 }
+
 /* Contact us Page */
 
 /* Cars Page */
-main .cars-hero{
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../images/car-page-hero-image.png");
+main .cars-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/car-page-hero-image.png");
   width: 100%;
   height: 30vh;
   background-size: cover;
@@ -1104,14 +1122,14 @@ main .cars-hero{
 
 }
 
-main .cars-hero .search-bar-container{
- display: flex;
- align-items: center;
- justify-content: center;
- height: 100%;
+main .cars-hero .search-bar-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-main .cars-hero .search-bar-container input{
+main .cars-hero .search-bar-container input {
   width: 700px;
   height: 55px;
   border-top-left-radius: 30px;
@@ -1124,7 +1142,7 @@ main .cars-hero .search-bar-container input{
   font-size: 25px;
 }
 
-main .cars-hero .search-bar-container button{
+main .cars-hero .search-bar-container button {
   width: 70px;
   height: 54px;
   border-top-right-radius: 30px;
@@ -1134,18 +1152,19 @@ main .cars-hero .search-bar-container button{
   background-color: rgb(241, 81, 35);
   cursor: pointer;
 }
-main .cars-hero .search-bar-container button i{
+
+main .cars-hero .search-bar-container button i {
   font-size: 25px;
   color: #fff;
   font-weight: 900;
 }
 
 
-.cars-content{
+.cars-content {
   margin: 10px;
 }
 
-.cars-content .cars-content-header{
+.cars-content .cars-content-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1154,20 +1173,20 @@ main .cars-hero .search-bar-container button i{
 
 }
 
-.cars-content .cars-content-header .cars-count{
+.cars-content .cars-content-header .cars-count {
   width: 100%;
   height: 100%;
   flex: 2;
   margin-top: 30px;
 }
 
-.cars-content .cars-content-header .cars-count p{
+.cars-content .cars-content-header .cars-count p {
   font-size: 20px;
   font-weight: 600;
   color: rgb(182, 178, 178);
 }
 
-.cars-content .cars-content-header .cars-filters{
+.cars-content .cars-content-header .cars-filters {
   display: flex;
   align-items: start;
   justify-content: space-around;
@@ -1178,17 +1197,18 @@ main .cars-hero .search-bar-container button i{
   gap: 8px;
 }
 
-.cars-content .cars-content-header .cars-filters .car-filter-item{
+.cars-content .cars-content-header .cars-filters .car-filter-item {
   display: flex;
   flex-direction: column;
 }
 
-.cars-content .cars-content-header .cars-filters .car-filter-item label{
+.cars-content .cars-content-header .cars-filters .car-filter-item label {
   font-size: 18px;
   font-weight: 600;
   color: #979797;
 }
-.cars-content .cars-content-header .cars-filters .car-filter-item select{
+
+.cars-content .cars-content-header .cars-filters .car-filter-item select {
   width: 200px;
   height: 40px;
   padding-left: 10px;
@@ -1196,7 +1216,7 @@ main .cars-hero .search-bar-container button i{
   font-weight: 500;
 }
 
-.cars-content .cars-content-header .cars-filters .car-filter-item:last-child{
+.cars-content .cars-content-header .cars-filters .car-filter-item:last-child {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1212,11 +1232,11 @@ main .cars-hero .search-bar-container button i{
   font-size: 13px;
 }
 
-.cars-content .cars-content-header .cars-filters .car-filter-item:last-child:hover{
+.cars-content .cars-content-header .cars-filters .car-filter-item:last-child:hover {
   color: #6d6a6a;
 }
 
-.cars-container{
+.cars-container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -1224,13 +1244,13 @@ main .cars-hero .search-bar-container button i{
   padding: 10px 25px;
 }
 
-.cars-container .car-item{
+.cars-container .car-item {
   width: 430px;
   padding: 3px;
 
 }
 
-.cars-container .car-item .car-header{
+.cars-container .car-item .car-header {
   position: relative;
   max-width: 430px;
   max-height: 460px;
@@ -1240,16 +1260,16 @@ main .cars-hero .search-bar-container button i{
   cursor: pointer;
 }
 
-.cars-container .car-item .car-header img{
+.cars-container .car-item .car-header img {
   max-width: 420px;
 
 }
 
-.cars-container .car-item .car-header:hover .car-header-overflow{
+.cars-container .car-item .car-header:hover .car-header-overflow {
   opacity: 1;
 }
 
-.car-header-overflow{
+.car-header-overflow {
   position: absolute;
   top: 0;
   left: 0;
@@ -1265,7 +1285,7 @@ main .cars-hero .search-bar-container button i{
   transition: opacity 0.3s ease-out;
 }
 
-.car-header-overflow a{
+.car-header-overflow a {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
@@ -1277,79 +1297,81 @@ main .cars-hero .search-bar-container button i{
   transition: 0.3s ease-out;
 }
 
-.car-header-overflow a:hover{
+.car-header-overflow a:hover {
   color: rgb(241, 81, 35);
 }
 
-.cars-container .car-item .car-body{
+.cars-container .car-item .car-body {
   padding: 10px 15px;
   border: 1px solid rgb(202, 196, 196);
   border-top: none;
 }
 
-.cars-container .car-item .car-body .car-details-row-1{
+.cars-container .car-item .car-body .car-details-row-1 {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
 
-.cars-container .car-item .car-body .car-details-row-1 .car-title{
+.cars-container .car-item .car-body .car-details-row-1 .car-title {
   font-size: 30px;
   font-weight: 600;
   color: rgb(241, 81, 35);
 }
-.cars-container .car-item .car-body .car-details-row-2 .car-rating{
+
+.cars-container .car-item .car-body .car-details-row-2 .car-rating {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 
 }
-.cars-container .car-item .car-body .car-details-row-2 .car-rating .car-stars{
+
+.cars-container .car-item .car-body .car-details-row-2 .car-rating .car-stars {
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 3px;
 }
 
-.cars-container .car-item .car-body .car-details-row-2 .car-rating .car-stars i{
+.cars-container .car-item .car-body .car-details-row-2 .car-rating .car-stars i {
   color: rgb(201, 187, 0);
   font-size: 18px;
 }
 
-.cars-container .car-item .car-body .car-details-row-2 .car-rating .car-rating-average{
+.cars-container .car-item .car-body .car-details-row-2 .car-rating .car-rating-average {
   font-size: 18px;
   font-weight: 600;
   color: #afaeae;
 }
 
-.cars-container .car-item .car-body .car-details-row-2{
+.cars-container .car-item .car-body .car-details-row-2 {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: space-between;
 }
 
-.cars-container .car-item .car-body .car-details-row-2 .car-model{
+.cars-container .car-item .car-body .car-details-row-2 .car-model {
   font-size: 18px;
   font-weight: 600;
   color: #afaeae;
 }
 
-.cars-container .car-item .car-body .car-details-row-1 .car-price{
+.cars-container .car-item .car-body .car-details-row-1 .car-price {
   font-size: 18px;
   font-weight: 600;
   color: rgb(241, 81, 35);
 }
 
-.cars-content .cars-pagination{
+.cars-content .cars-pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 50px 0;
 }
 
-.cars-content .cars-pagination button{
+.cars-content .cars-pagination button {
   font-size: 20px;
   font-weight: 400;
   color: #fff;
@@ -1361,28 +1383,28 @@ main .cars-hero .search-bar-container button i{
   transition: 0.3s ease-out;
 }
 
-.cars-content .cars-pagination button:hover{
+.cars-content .cars-pagination button:hover {
   background-color: rgb(180, 59, 26);
 }
 
 @media only screen and (max-width : 768px) {
-  main .cars-hero .search-bar-container input{
+  main .cars-hero .search-bar-container input {
     width: 60%;
     height: 50px;
     font-size: 16px;
   }
 
-  main .cars-hero .search-bar-container button{
+  main .cars-hero .search-bar-container button {
     width: 15%;
     height: 50px;
     font-size: 20px;
   }
 
-  .cars-content{
-    margin : 5px;
+  .cars-content {
+    margin: 5px;
   }
 
-  .cars-content .cars-content-header{
+  .cars-content .cars-content-header {
     display: block;
     text-align: center;
   }
@@ -1399,25 +1421,26 @@ main .cars-hero .search-bar-container button i{
     width: 45%;
   }
 
-  .cars-content .cars-content-header .cars-filters .car-filter-item label  {
+  .cars-content .cars-content-header .cars-filters .car-filter-item label {
     font-size: 10px;
     text-align: start;
   }
 
-  .cars-content .cars-content-header .cars-filters .car-filter-item select{
+  .cars-content .cars-content-header .cars-filters .car-filter-item select {
     width: 100%;
   }
 
-  .cars-content .cars-content-header .cars-filters .car-filter-item:last-child{
+  .cars-content .cars-content-header .cars-filters .car-filter-item:last-child {
     margin-top: 10px;
   }
 
-  .cars-container{
+  .cars-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .cars-container .car-item {
     max-width: 100%;
     padding: 3px;
@@ -1447,25 +1470,25 @@ main .cars-hero .search-bar-container button i{
 
 }
 
-@media only screen and (min-width : 768px) and (max-width : 992px){
+@media only screen and (min-width : 768px) and (max-width : 992px) {
 
-  main .cars-hero .search-bar-container input{
+  main .cars-hero .search-bar-container input {
     width: 60%;
     height: 50px;
     font-size: 18px;
   }
 
-  main .cars-hero .search-bar-container button{
+  main .cars-hero .search-bar-container button {
     width: 15%;
     height: 50px;
     font-size: 20px;
   }
 
-  .cars-content{
-    margin : 5px;
+  .cars-content {
+    margin: 5px;
   }
 
-  .cars-content .cars-content-header{
+  .cars-content .cars-content-header {
     display: block;
     text-align: center;
   }
@@ -1482,25 +1505,26 @@ main .cars-hero .search-bar-container button i{
     width: 45%;
   }
 
-  .cars-content .cars-content-header .cars-filters .car-filter-item label  {
+  .cars-content .cars-content-header .cars-filters .car-filter-item label {
     font-size: 10px;
     text-align: start;
   }
 
-  .cars-content .cars-content-header .cars-filters .car-filter-item select{
+  .cars-content .cars-content-header .cars-filters .car-filter-item select {
     width: 100%;
   }
 
-  .cars-content .cars-content-header .cars-filters .car-filter-item:last-child{
+  .cars-content .cars-content-header .cars-filters .car-filter-item:last-child {
     margin-top: 10px;
   }
 
-  .cars-container{
+  .cars-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
   }
+
   .cars-container .car-item {
     width: 600px;
     padding: 3px;
@@ -1532,26 +1556,25 @@ main .cars-hero .search-bar-container button i{
 /* Cars Page */
 
 /* Car Page */
-main .car-container{
+main .car-container {
   display: flex;
-  border: 1px solid;
-  margin: 10px 30px;
+  margin: 50px 30px;
   align-items: start;
- justify-content: space-around;
+  justify-content: space-around;
+  margin-top: 100px;
 }
 
-main .car-container .carousel-container{
+main .car-container .carousel-container {
   display: flex;
   align-items: center;
   justify-content: start;
   padding: 10px 20px;
   flex: 1;
-  border: 1px solid;
   width: 50%;
   gap: 8px;
 }
 
-main .car-container .carousel-container .carousel-previous button{
+main .car-container .carousel-container .carousel-previous button {
   border-radius: 50%;
   border: none;
   background: none;
@@ -1560,7 +1583,7 @@ main .car-container .carousel-container .carousel-previous button{
   transition: 0.3s ease-out;
 }
 
-main .car-container .carousel-container .carousel-previous button:hover i{
+main .car-container .carousel-container .carousel-previous button:hover i {
   color: rgb(180, 59, 26);
 }
 
@@ -1569,7 +1592,7 @@ main .car-container .carousel-container .carousel-previous button i {
   color: rgb(241, 81, 35)
 }
 
-main .car-container .carousel-container .carousel-next button{
+main .car-container .carousel-container .carousel-next button {
   border-radius: 50%;
   border: none;
   background: none;
@@ -1578,7 +1601,7 @@ main .car-container .carousel-container .carousel-next button{
   transition: 0.3s ease-out;
 }
 
-main .car-container .carousel-container .carousel-next button:hover i{
+main .car-container .carousel-container .carousel-next button:hover i {
   color: rgb(180, 59, 26);
 }
 
@@ -1587,27 +1610,33 @@ main .car-container .carousel-container .carousel-next button i {
   color: rgb(241, 81, 35)
 }
 
-main .car-container .carousel-container .carousel-images{
+main .car-container .carousel-container .carousel-images {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
 
 
-main .car-container .carousel-container .carousel-images .main-car-image{
+main .car-container .carousel-container .carousel-images .main-car-image {
   width: 600px;
   height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
-main .car-container .carousel-container .carousel-images .main-car-image img{
+main .car-container .carousel-container .carousel-images .main-car-image .carousel-car-image {
+  display: none;
   width: 590px;
   height: 390px;
 }
 
-.active-car-image{
+main .car-container .carousel-container .carousel-images .main-car-image .active-carousel-car-image {
+  display: inline-block;
+}
+
+.active-car-image {
   border: 5px solid rgb(241, 81, 35);
 }
 
@@ -1616,27 +1645,26 @@ main .car-container .carousel-container .carousel-images .car-carousel-images-co
   height: 100px;
 }
 
-main .car-container .carousel-container .carousel-images .car-carousel-images-container .car-carousel-image img{
+main .car-container .carousel-container .carousel-images .car-carousel-images-container .car-carousel-image img {
   width: 100px;
   height: 100px;
 }
 
-main .car-container .carousel-container .carousel-images .car-carousel-images-container{
+main .car-container .carousel-container .carousel-images .car-carousel-images-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-main .car-info-container{
+main .car-info-container {
   flex: 2;
   width: 50%;
-  border: 1px solid;
   height: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  padding: 30px 20px;
+  padding: 10px 20px;
 }
 
 main .car-info-container .car-title {
@@ -1646,14 +1674,14 @@ main .car-info-container .car-title {
   width: 100%;
 }
 
-main .car-info-container .car-title h2{
+main .car-info-container .car-title h2 {
   font-size: 50px;
   color: rgb(241, 81, 35);
   font-weight: 900;
 
 }
 
-main .car-info-container .car-table-info{
+main .car-info-container .car-table-info {
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -1662,27 +1690,29 @@ main .car-info-container .car-table-info{
   width: 100%;
 }
 
-main .car-info-container .car-table-info table{
+main .car-info-container .car-table-info table {
   width: 100%;
-  
+
 }
-main .car-info-container .car-table-info table thead{
+
+main .car-info-container .car-table-info table thead {
   background-color: rgb(13, 13, 13);
   color: #fff;
 }
 
-main .car-info-container .car-table-info table thead tr th{
+main .car-info-container .car-table-info table thead tr th {
   padding: 10px 30px;
   font-size: 18px;
   font-weight: 600;
 }
 
 
-main .car-info-container .car-table-info table tbody tr td{
+main .car-info-container .car-table-info table tbody tr td {
   text-align: center;
-  padding: 5px;
+  padding: 10px;
   font-size: 18px;
   font-weight: 400;
+  background-color: #e6e3e3;
 }
 
 main .car-info-container .car-details-tab {
@@ -1691,7 +1721,7 @@ main .car-info-container .car-details-tab {
   margin-top: 45px;
 }
 
-main .car-info-container .car-detail-tab-header{
+main .car-info-container .car-detail-tab-header {
   border: 1px solid;
   display: flex;
   align-items: center;
@@ -1700,7 +1730,8 @@ main .car-info-container .car-detail-tab-header{
   cursor: pointer;
   border: 1px solid #fff;
 }
-main .car-info-container .car-detail-tab-header .tab-item-header{
+
+main .car-info-container .car-detail-tab-header .tab-item-header {
   padding: 0;
   margin: 0;
   border: 1px solid;
@@ -1708,16 +1739,16 @@ main .car-info-container .car-detail-tab-header .tab-item-header{
   background-color: rgb(13, 13, 13);
 }
 
-main .car-info-container .car-detail-tab-header .tab-item-header p{
+main .car-info-container .car-detail-tab-header .tab-item-header p {
   font-size: 18px;
   font-weight: 600;
 }
 
-main .car-info-container .car-detail-tab-header .tab-item-header-active{
+main .car-info-container .car-detail-tab-header .tab-item-header-active {
   background-color: rgb(180, 59, 26);
 }
 
-main .car-info-container .car-detail-tab-content{
+main .car-info-container .car-detail-tab-content {
   border: 1px solid #e6e3e3;
   padding: 10px 15px;
   margin: 2px;
@@ -1725,7 +1756,12 @@ main .car-info-container .car-detail-tab-content{
   border-radius: 8px;
 }
 
-main .car-info-container .car-detail-tab-content .tab-item-content p{
+
+main .car-info-container .car-detail-tab-content .tab-item-content {
+  display: none;
+}
+
+main .car-info-container .car-detail-tab-content .tab-item-content p {
   font-size: 18px;
   font-weight: 400;
   text-align: justify;
@@ -1733,8 +1769,332 @@ main .car-info-container .car-detail-tab-content .tab-item-content p{
 }
 
 
+main .car-info-container .car-detail-tab-content .tab-item-content-active {
+  display: inline-block;
+  transition: display 0.3s;
+}
+
+main .car-info-container .car-details-tab .car-detail-tab-content .tab-item-content ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  padding: 5px;
+  gap: 15px;
+}
+
+main .car-info-container .car-details-tab .car-detail-tab-content .tab-item-content ul li {
+  list-style: none;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+main .car-info-container .car-other-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+}
+
+main .car-info-container .car-other-info-container .rent-car-btn {
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgb(241, 81, 35);
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+main .car-info-container .car-other-info-container .rent-car-btn:hover {
+  background-color: rgb(180, 59, 26);
+}
+
+main .car-info-container .car-other-info-container p {
+  color: #6d6a6a;
+}
+
+main .car-review-container {
+  margin: 10px 50px;
+}
+
+main .car-review-container .car-review-title {
+  font-size: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #2b2828;
+}
+
+main .car-review-container .reviews {
+  padding: 10px;
+
+}
+
+main .car-review-container .reviews .review-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #eee8e8;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 1px 3px 8px rgb(32, 32, 32);
+}
+
+main .car-review-container .reviews .review-item .review-user-image {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+main .car-review-container .reviews .review-item .review-user-image img {
+  width: 100px;
+  height: auto;
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+
+main .car-review-container .reviews .review-item .review-content {
+  flex: 10;
+}
+
+main .car-review-container .reviews .review-item .review-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 10px 15px;
+}
+
+main .car-review-container .reviews .review-item .review-content h4 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #2b2828;
+}
+
+main .car-review-container .reviews .review-item .review-content #review-date {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+main .car-review-container .reviews .review-item .review-content #review-comment {
+  font-size: 18px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+main .car-review-container .reviews .review-item .review-content .review-stars {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+main .car-review-container .reviews .review-item .review-content .review-stars .car-review-stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+main .car-review-container .reviews .review-item .review-content .review-stars .car-review-stars i {
+  font-size: 18px;
+  color: rgb(201, 187, 0);
+}
+
+main .car-review-container .reviews .review-item .review-content .review-stars .car-review-rating p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2b2828;
+}
+
+.rent-car-modal {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50vw;
+  background-color: #f7f7f7;
+  border: 1px solid #6d6a6a;
+  z-index: 100;
+  padding: 10px 5px;
+  display: none;
+}
+
+.rent-car-modal .rent-car-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #6d6a6a;
+}
+
+.rent-car-modal .rent-car-modal-header p {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 600;
+  color: #2b2828;
+  width: 100%;
+}
+
+.rent-car-modal .rent-car-modal-header button {
+  padding: 5px 10px;
+
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+.rent-car-modal .rent-car-modal-header button i {
+  font-size: 18px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+}
+
+.rent-car-modal .rent-car-modal-body {
+  padding: 10px 20px;
+}
+
+.rent-car-modal .rent-car-modal-body .row-1 {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.rent-car-modal .rent-car-modal-body .row-1 .rent-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+}
+
+.rent-car-modal .rent-car-modal-body .row-1 .rent-form-group label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rent-car-modal .rent-car-modal-body .row-1 .rent-form-group input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid #afaeae;
+}
+
+.rent-car-modal .rent-car-modal-body .row-2 {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.rent-car-modal .rent-car-modal-body .row-2 .rent-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 100%;
+}
+
+.rent-car-modal .rent-car-modal-body .row-2>*:nth-child(1) {
+  flex: 5;
+}
+
+.rent-car-modal .rent-car-modal-body .row-2>*:nth-child(2) {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  margin-top: 29px;
+
+}
+
+.rent-car-modal .rent-car-modal-body .row-2>*:nth-child(2) label {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.rent-car-modal .rent-car-modal-body .row-2>*:nth-child(3) {
+  flex: 5;
+}
+
+.rent-car-modal .rent-car-modal-body .row-2>*:nth-child(4) {
+  flex: 5;
+}
+
+.rent-car-modal .rent-car-modal-body .row-2 .rent-form-group label {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.rent-car-modal .rent-car-modal-body .row-2 .rent-form-group input {
+  width: 100%;
+  height: 40px;
+  padding: 5px 10px;
+  font-size: 18px;
+  border: 1px solid #afaeae;
+}
+
+.rent-car-modal .rent-car-modal-footer {
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.rent-car-modal .rent-car-modal-footer .close-rent-modal {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  background-color: #6d6a6a;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.rent-car-modal .rent-car-modal-footer .close-rent-modal:hover {
+  background-color: #afaeae;
+}
+
+.rent-car-modal .rent-car-modal-footer .rent-car-save-btn {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  background-color: rgb(180, 59, 26);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+  width: 92.63px;
+}
+
+.rent-car-modal .rent-car-modal-footer .rent-car-save-btn:hover {
+  background-color: rgb(241, 81, 35);
+}
+
+
+
+
+
 /* Car Page */
-
-
-
-
