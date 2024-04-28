@@ -66,27 +66,6 @@
             <img src="images/car_images/honda3.jpg" alt="Car Iamge" class="carousel-car-image" />
             <img src="images/car_images/honda4.jpg" alt="Car Iamge" class="carousel-car-image" />
           </div>
-
-
-
-          <!-- <div class="car-carousel-images-container">
-            <div class="car-carousel-image active-car-image">
-              <img src="https://placehold.co/100" alt="" />
-            </div>
-
-            <div class="car-carousel-image active-car-image">
-              <img src="https://placehold.co/100" alt="" />
-            </div>
-
-            <div class="car-carousel-image active-car-image">
-              <img src="https://placehold.co/100" alt="" />
-            </div>
-
-            <div class="car-carousel-image active-car-image">
-              <img src="https://placehold.co/100" alt="" />
-            </div>
-          </div> -->
-
         </div>
         <div class="carousel-next">
           <button id="carousel-button-next"><i class="fas fa-caret-right"></i></button>
@@ -294,18 +273,18 @@
 
   <div class="rent-car-modal">
     <div class="rent-car-modal-header">
-      <p>Rent this Car</p>
+      <p>Rent Car</p>
       <button class="rent-car-modal-close"><i class="fas fa-x"></i></button>
     </div>
     <div class="rent-car-modal-body">
       <div class="row-1">
         <div class="rent-form-group">
           <label>Start Date</label>
-          <input type="date" name="start_date" id="start_date">
+          <input type="date" name="start_date" id="start_date" onchange="setRentEndDateMaxVal()">
         </div>
         <div class="rent-form-group">
           <label>End Date</label>
-          <input type="date" name="end_date" id="end_date">
+          <input type="date" name="end_date" id="end_date" disabled onchange="computeTotalAmount()">
         </div>
       </div>
       <div class="row-2">
@@ -314,13 +293,13 @@
           <input type="text" name="rent_per_day" id="rent_per_day" value="₱ 500.00" disabled>
         </div>
 
-        <div class="rent-form-group">
+        <div class="rent-form-group hideOnMobile">
           <label>X</label>
         </div>
 
         <div class="rent-form-group">
           <label>Days</label>
-          <input type="text" name="rent_per_day" id="rent_per_day" value="0" disabled>
+          <input type="text" name="rent_per_day" id="days" value="0" disabled>
         </div>
 
         <div class="rent-form-group">

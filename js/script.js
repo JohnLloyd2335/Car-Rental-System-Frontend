@@ -111,12 +111,55 @@ $(document).ready(function () {
 
   //Rent Car Modal
   $(".rent-car-btn").click(function () {
-
     $(".rent-car-modal").show();
   });
 
   $(".rent-car-modal-close").click(function () {
-
     $(".rent-car-modal").hide();
   });
+
+
 });
+
+//set rent end date max val
+function setRentEndDateMaxVal() {
+  let startDate = $("#start_date");
+  let endDate = $("#end_date");
+  let startDateToDate = new Date($("#start_date").val());
+  let endDateToDate = new Date($("#end_date").val());
+  let daysHTML = $("#days");
+  let totalAmountHTML = $("#total_amount");
+
+  daysHTML.val("0");
+  totalAmountHTML.val("₱ 0.00");
+  if (endDateToDate > startDateToDate) {
+    endDate.val("");
+  }
+
+  endDate.attr('disabled', false);
+  endDate.attr('min', startDate.val());
+}
+
+//compute total amount
+function computeTotalAmount(pricePerDay = 500) {
+  let startDateToDate = new Date($("#start_date").val());
+  let endDateToDate = new Date($("#end_date").val());
+  let daysHTML = $("#days");
+  let totalAmountHTML = $("#total_amount");
+  let days = 0;
+  let totalAmount = 0;
+
+  if (startDateToDate == null || endDateToDate == null) {
+    totalAmount = 0;
+    daysHTML.val("0");
+  }
+  else {
+    let timeDifference = endDateToDate.getTime() - startDateToDate.getTime();
+    days = Math.ceil(timeDifference / (1000 * 3600 * 24));
+    daysHTML.val(days);
+    totalAmount = parseFloat(pricePerDay) * parseFloat(days);
+  }
+  totalAmountHTML.val("₱ " + parseFloat(totalAmount).toFixed(2))
+}
+
+
