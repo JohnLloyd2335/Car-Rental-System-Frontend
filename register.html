@@ -31,7 +31,7 @@
             <li class="nav-link">
                 <a href="contact-us.html">Contact Us</a>
             </li>
-            <li class="nav-link"><a href="#">Login/Register</a></li>
+            <li class="nav-link"><a href="#">register/Register</a></li>
             <li class="nav-link" id="dropdown-open">
                 <a href="#">John Doe</a>
                 <i class="fa-solid fa-caret-down"></i>
@@ -53,40 +53,58 @@
     </nav>
 
     <main>
-        <div class="login-page-section">
-            <div class="login-left-side">
+        <div class="register-page-section">
+            <div class="register-left-side">
                 <img src="images/logo/nav-logo.png" alt="Logo Left Side">
                 <p>Car Rental System</p>
             </div>
-            <div class="login-right-side">
-
-                <div class="login-form-group">
-                    <label>Email</label>
-                    <input type="email" name="email" placeholder="Email">
-                </div>
-
-                <div class="login-form-group">
-                    <label>Password</label>
-                    <input type="password" name="password" placeholder="Password">
-                </div>
-
-                <div class="login-form-group">
-
-                    <div class="remember-me-container">
-                        <input type="checkbox" name="remember_me" id="remember-me">
-                        <p>Remember me</p>
+            <div class="register-right-side">
+                <div class="reg-form-group">
+                    <label>Name</label>
+                    <div class="icon-input-group">
+                        <i class="fas fa-user"></i><input type="text" placeholder="Name">
                     </div>
-
-                    <a href="" id="forgot-password">Forgot Password?</a>
-
                 </div>
 
-                <div class="login-form-group">
-
-                    <button class="login-btn">Login</button>
-
+                <div class="reg-form-group">
+                    <label>Email</label>
+                    <div class="icon-input-group">
+                        <i class="fas fa-envelope"></i><input type="text" placeholder="Email">
+                    </div>
                 </div>
 
+                <div class="reg-form-group">
+                    <label>Mobile Number</label>
+                    <div class="icon-input-group">
+                        <span>+63</span><input type="number" placeholder="Mobile Number">
+                    </div>
+                </div>
+
+                <div class="reg-form-group">
+                    <label>Address</label>
+                    <div class="icon-input-group">
+                        <i class="fas fa-address-card"></i><input type="text" placeholder="Address">
+                    </div>
+                </div>
+
+                <div class="reg-form-group">
+                    <label>Password</label>
+                    <div class="icon-input-group">
+                        <i class="fas fa-key"></i><input type="text" placeholder="Password">
+                    </div>
+                </div>
+
+                <div class="reg-form-group">
+                    <label>Confirm Password</label>
+                    <div class="icon-input-group">
+                        <i class="fas fa-key"></i><input type="text" placeholder="Confirm Password">
+                    </div>
+                </div>
+
+                <div class="reg-buttons">
+                    <a href="#">Already have an account?</a>
+                    <button>Register</button>
+                </div>
 
             </div>
         </div>

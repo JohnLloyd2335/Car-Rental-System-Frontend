@@ -2349,6 +2349,8 @@ main .login-page-section .login-left-side p {
   font-size: 30px;
   font-weight: 900;
   color: rgb(180, 59, 26);
+  text-align: center;
+  width: 100%;
 }
 
 main .login-page-section .login-right-side {
@@ -2481,3 +2483,200 @@ main .login-page-section .login-right-side .login-form-group:nth-child(4) button
 }
 
 /* Login Page */
+
+/* Register Page */
+main .register-page-section {
+  border: lpx solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #2b2828;
+  margin: 100px 0;
+
+}
+
+main .register-page-section .register-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border-right: 2px solid #e6e3e3;
+  padding: 30px 50px;
+  width: 600px;
+}
+
+main .register-page-section .register-left-side img {
+  height: auto;
+  width: 300px;
+}
+
+main .register-page-section .register-left-side p {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(180, 59, 26);
+  text-align: center;
+  width: 100%;
+}
+
+main .register-page-section .register-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  padding: 20px 30px;
+  width: 100%;
+  gap: 10px;
+}
+
+main .register-page-section .register-right-side .reg-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 3px;
+  width: 100%;
+}
+
+
+main .register-page-section .register-right-side .reg-form-group label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2b2828;
+}
+
+main .register-page-section .register-right-side .reg-form-group .icon-input-group {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+main .register-page-section .register-right-side .reg-form-group .icon-input-group i {
+  padding: 5px 15px;
+  font-size: 25px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfcece;
+  color: #2b2828;
+}
+
+main .register-page-section .register-right-side .reg-form-group:nth-child(3) span {
+  padding: 5px 10px;
+  font-size: 18px;
+  font-weight: 600;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #cfcece;
+  color: #2b2828;
+}
+
+main .register-page-section .register-right-side .reg-form-group .icon-input-group input {
+  width: 100%;
+  height: 45px;
+  border-radius: 3px;
+  border: 1px solid #e6e3e3;
+  padding-left: 8px;
+  font-size: 18px;
+  border-left: none;
+}
+
+main .register-page-section .register-right-side .reg-buttons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+main .register-page-section .register-right-side .reg-buttons a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #2b2828;
+  font-weight: 500;
+  transition: 0.3s ease-out;
+}
+
+main .register-page-section .register-right-side .reg-buttons a:hover {
+  color: rgb(241, 81, 35);
+}
+
+main .register-page-section .register-right-side .reg-buttons button {
+  padding: 10px 15px;
+  font-size: 18px;
+  font-weight: 500;
+  outline: none;
+  border: none;
+  background-color: rgb(241, 81, 35);
+  color: #ffff;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+main .register-page-section .register-right-side .reg-buttons button:hover {
+  background-color: rgb(180, 59, 26);
+}
+
+
+@media only screen and (max-width: 600px) {
+  main .register-page-section {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  main .register-page-section .register-left-side {
+    border-bottom: 1px solid #e6e3e3;
+    border-right: none;
+  }
+
+  main .register-page-section .register-left-side img {
+    width: 200px;
+    height: auto;
+  }
+
+  main .register-page-section .register-left-side p {
+    font-size: 25px;
+  }
+
+  main .register-page-section .register-right-side .reg-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width : 968px) {
+  main .register-page-section {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+  }
+
+  main .register-page-section .register-left-side {
+    border-bottom: 1px solid #e6e3e3;
+    border-right: none;
+  }
+
+  main .register-page-section .register-left-side img {
+    width: 200px;
+    height: auto;
+  }
+
+  main .register-page-section .register-left-side p {
+    font-size: 25px;
+  }
+
+
+}
+
+/*Register Page */
