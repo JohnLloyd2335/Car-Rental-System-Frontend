@@ -118,6 +118,15 @@ $(document).ready(function () {
     $(".rent-car-modal").hide();
   });
 
+  $("#mobile_number").on('input', function () {
+    let value = $(this).val();
+
+    if (value.length > 10) {
+      value = value.slice(0, 10);
+      $(this).val(value);
+    }
+  })
+
 
 });
 

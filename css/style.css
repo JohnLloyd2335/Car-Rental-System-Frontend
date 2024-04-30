@@ -2310,12 +2310,6 @@ main .car-review-container .reviews .review-item .review-content .review-stars .
 
 /* Login Page */
 
-main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 50px 30px;
-}
 
 main .login-page-section {
   border: lpx solid black;
@@ -2325,7 +2319,7 @@ main .login-page-section {
   background-color: #f7f7f7;
   border-radius: 8px;
   box-shadow: 1px 1px 1px #2b2828;
-  margin: 100px 0;
+  margin: 150px 400px;
 
 }
 
@@ -2443,6 +2437,7 @@ main .login-page-section .login-right-side .login-form-group:nth-child(4) button
     display: flex;
     flex-direction: column;
     width: 90vw;
+    margin: 50px 30px;
   }
 
   main .login-page-section .login-left-side {
@@ -2465,6 +2460,7 @@ main .login-page-section .login-right-side .login-form-group:nth-child(4) button
     display: flex;
     flex-direction: column;
     width: 90vw;
+    margin: 50px;
   }
 
   main .login-page-section .login-left-side {
@@ -2493,7 +2489,7 @@ main .register-page-section {
   background-color: #f7f7f7;
   border-radius: 8px;
   box-shadow: 1px 1px 1px #2b2828;
-  margin: 100px 0;
+  margin: 100px 400px;
 
 }
 
@@ -2568,7 +2564,7 @@ main .register-page-section .register-right-side .reg-form-group .icon-input-gro
 main .register-page-section .register-right-side .reg-form-group:nth-child(3) span {
   padding: 5px 10px;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 900;
   height: 45px;
   display: flex;
   align-items: center;
@@ -2585,6 +2581,7 @@ main .register-page-section .register-right-side .reg-form-group .icon-input-gro
   padding-left: 8px;
   font-size: 18px;
   border-left: none;
+  outline: none;
 }
 
 main .register-page-section .register-right-side .reg-buttons {
@@ -2626,10 +2623,15 @@ main .register-page-section .register-right-side .reg-buttons button:hover {
 
 
 @media only screen and (max-width: 600px) {
+
+
   main .register-page-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     width: 90vw;
+    margin: 50px 30px;
   }
 
   main .register-page-section .register-left-side {
@@ -2660,6 +2662,7 @@ main .register-page-section .register-right-side .reg-buttons button:hover {
     display: flex;
     flex-direction: column;
     width: 90vw;
+    margin: 50px 30px;
   }
 
   main .register-page-section .register-left-side {
@@ -2680,3 +2683,291 @@ main .register-page-section .register-right-side .reg-buttons button:hover {
 }
 
 /*Register Page */
+
+/* Forgot Password */
+main .forgot-password-page-section {
+  border: lpx solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #2b2828;
+  margin: 150px 400px;
+
+}
+
+main .forgot-password-page-section .forgot-password-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border-right: 2px solid #e6e3e3;
+  padding: 30px 50px;
+  width: 600px;
+}
+
+main .forgot-password-page-section .forgot-password-left-side img {
+  height: auto;
+  width: 300px;
+}
+
+main .forgot-password-page-section .forgot-password-left-side p {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(180, 59, 26);
+  text-align: center;
+  width: 100%;
+}
+
+main .forgot-password-page-section .forgot-password-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+  margin: 10px 50px;
+  width: 100%;
+  height: 100%;
+
+}
+
+
+main .forgot-password-page-section .forgot-password-right-side .forgot-password-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+
+main .forgot-password-page-section .forgot-password-right-side .forgot-password-form-group label {
+  font-size: 30px;
+  color: #2b2828;
+  font-weight: 600;
+}
+
+main .forgot-password-page-section .forgot-password-right-side .forgot-password-form-group input {
+  height: 45px;
+  padding-left: 10px;
+  font-size: 18px;
+  outline: none;
+  border: #eee8e8;
+  width: 100%;
+}
+
+
+main .forgot-password-page-section .forgot-password-right-side>*:nth-child(2) {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .forgot-password-page-section .forgot-password-right-side>*:nth-child(2) button {
+  padding: 8px 10px;
+  font-size: 21px;
+  font-weight: 500;
+  background-color: rgb(241, 81, 35);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+main .forgot-password-page-section .forgot-password-right-side>*:nth-child(2) button:hover {
+  background-color: rgb(180, 59, 26);
+}
+
+@media only screen and (max-width : 600px) {
+
+  main .forgot-password-page-section {
+    flex-direction: column;
+    margin: 20px 15px;
+
+  }
+
+  main .forgot-password-page-section .forgot-password-right-side {
+    padding: 10px 30px;
+  }
+
+  main .forgot-password-page-section .forgot-password-right-side .forgot-password-form-group label {
+    font-size: 25px;
+  }
+
+  main .forgot-password-page-section .forgot-password-right-side>*:nth-child(2) button {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width : 600px) and (max-width : 976px) {
+  main .forgot-password-page-section {
+    flex-direction: column;
+    margin: 20px 50px;
+
+
+  }
+
+  main .forgot-password-page-section .forgot-password-left-side {
+    border-right: none;
+    border-bottom: 1px solid #e6e3e3;
+  }
+
+  main .forgot-password-page-section .forgot-password-right-side {
+    padding: 10px 30px;
+  }
+
+  main .forgot-password-page-section .forgot-password-right-side .forgot-password-form-group label {
+    font-size: 25px;
+  }
+
+  main .forgot-password-page-section .forgot-password-right-side>*:nth-child(2) button {
+    font-size: 18px;
+  }
+}
+
+/*Forgot Password*/
+
+/* Change Password */
+
+main .change-password-page-section {
+  border: lpx solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #2b2828;
+  margin: 150px 400px;
+
+}
+
+main .change-password-page-section .change-password-left-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  border-right: 2px solid #e6e3e3;
+  padding: 30px 50px;
+  width: 600px;
+}
+
+main .change-password-page-section .change-password-left-side img {
+  height: auto;
+  width: 300px;
+}
+
+main .change-password-page-section .change-password-left-side p {
+  font-size: 30px;
+  font-weight: 900;
+  color: rgb(180, 59, 26);
+  text-align: center;
+  width: 100%;
+}
+
+main .change-password-page-section .change-password-right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 5px;
+  margin: 10px 50px;
+  width: 100%;
+  height: 100%;
+
+}
+
+main .change-password-page-section .change-password-right-side .change-password-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  padding: 5px 10px;
+}
+
+main .change-password-page-section .change-password-right-side .change-password-form-group label {
+  font-size: 20px;
+  font-weight: 600;
+  color: #2b2828;
+}
+
+main .change-password-page-section .change-password-right-side>*:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+main .change-password-page-section .change-password-right-side>*:nth-child(3) button {
+  font-size: 21px;
+  font-weight: 500;
+  padding: 3px 15px;
+  background-color: rgb(241, 81, 35);
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+/* Change Password */
+
+/*Transaction Page Section */
+main .transaction-page-section {
+  border: 1px solid #0000;
+  margin: 150px 80px;
+  padding: 20px 30px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 1px 1px 1px #2b2828;
+}
+
+main .transaction-page-section .transaction-title-container {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+
+main .transaction-page-section .transaction-title-container h3 {
+  font-size: 30px;
+  color: #0D0D0D;
+  font-weight: 600;
+  text-align: left;
+}
+
+main .transaction-page-section .transaction-table-container {
+  width: 100%;
+  border: 1px solid;
+}
+
+@media only screen and (max-width : 600px) {
+  main .transaction-page-section {
+    margin: 30px 50px;
+  }
+
+  main .transaction-page-section .transaction-title-container {
+    display: flex;
+    align-items: center;
+  }
+
+  main .transaction-page-section .transaction-title-container h3 {
+    align-self: center;
+  }
+
+}
+
+@media only screen and (min-width : 667px) and (max-width: 976px) {
+  main .transaction-page-section {
+    margin: 50px 80px;
+  }
+}
+
+/*Transaction Page Section */
