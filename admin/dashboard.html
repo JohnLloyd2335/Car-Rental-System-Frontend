@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="js/chart.js"></script>
+
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar-container">
+
+            <div class="sidebar-close-container" id="closeSideBarMob">
+                <i class="fas fa-x"></i>
+            </div>
+
+            <div class="brand-container">
+                <img src="https://placehold.co/100/png" alt="">
+                <span class="brand-name">Brand Name</span>
+            </div>
+
+
+            <div class="link-container">
+                <a class="link" href="#"><i class="fas fa-dashboard"></i><span class="text-link">Dashboard</span></a>
+                <a class="link" href="#"><i class="fas fa-list"></i><span class="text-link">Category</span></a>
+                <a class="link" href="#"><i class="fas fa-copyright"></i><span class="text-link">Brand</span></a>
+                <a class="link" href="#"><i class="fas fa-car"></i><span class="text-link">Cars</span></a>
+                <a class="link" href="#"><i class="fas fa-calendar"></i><span class="text-link">Rentals</span></a>
+                <a class="link" href="#"><i class="fas fa-chart-simple"></i><span class="text-link">Reports</span></a>
+                <a class="link" href="#"><i class="fas fa-users"></i><span class="text-link">Manage Users</span></a>
+            </div>
+        </div>
+
+        <main>
+            <div class="main-header">
+                <div class="toggle-icon-container">
+                    <i class="fas fa-bars" id="toggleIcon"></i>
+                    <i class="fas fa-bars" id="toggleIconSmallDev"></i>
+                </div>
+                <div class="user-dropdown-container">
+                    <div class="user-dropdown-info" id="user-dropdown">
+                        <span>John Doe</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="user-dropdown-items" id="user-dropdown-items">
+                        <div class="user-dropdown-item"><a href="#">Change Password</a></div>
+                        <div class="user-dropdown-item"><a href="#">Account Settings</a></div>
+                        <div class="user-dropdown-item"><a href="#">Logout</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="cards-container">
+                    <div class="card bg-main">
+                        <div class="card-icon-container">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="card-info-container">
+                            <h3>45</h3>
+                            <h4>AVAILABLE CARS</h4>
+                        </div>
+                    </div>
+
+                    <div class="card bg-success">
+                        <div class="card-icon-container">
+                            <i class="fas fa-calendar"></i>
+                        </div>
+                        <div class="card-info-container">
+                            <h3>5</h3>
+                            <h4>ACTIVE RENTALS</h4>
+                        </div>
+                    </div>
+
+                    <div class="card bg-dark">
+                        <div class="card-icon-container">
+                            <i class="fas fa-ticket"></i>
+                        </div>
+                        <div class="card-info-container">
+                            <h3>12</h3>
+                            <h4>PENDING RESERVATION</h4>
+                        </div>
+                    </div>
+
+                    <div class="card bg-primary">
+                        <div class="card-icon-container">
+                            <i class="fas fa-dollar"></i>
+                        </div>
+                        <div class="card-info-container">
+                            <h3>3,564,012</h3>
+                            <h4>TOTAL REVENUE</h4>
+                        </div>
+                    </div>
+
+                    <div class="card bg-warning">
+                        <div class="card-icon-container">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="card-info-container">
+                            <h3>4.5</h3>
+                            <h4>CARS AVERAGE RATINGS</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="analytic-container">
+                    <div class="revenue-graph-container">
+                        <div class="graph-header">
+                            <p>Revenue by Month</p>
+                        </div>
+                        <div class="graph-content">
+                            <canvas id="revenueByMonthGraph"></canvas>
+                        </div>
+                    </div>
+
+                    <div class="revenue-graph-container">
+                        <div class="graph-header">
+                            <p>Car by Category</p>
+                        </div>
+                        <div class="graph-content" style="width: 738px; height: 320px;">
+                            <canvas id="carCategoryGraph"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/graph-config.js"></script>
+
+    <script src="js/ajax.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

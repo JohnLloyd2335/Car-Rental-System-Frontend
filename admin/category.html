@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <script src="js/chart.js"></script>
+
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <div class="sidebar-container">
+
+            <div class="sidebar-close-container" id="closeSideBarMob">
+                <i class="fas fa-x"></i>
+            </div>
+
+            <div class="brand-container">
+                <img src="https://placehold.co/100/png" alt="">
+                <span class="brand-name">Brand Name</span>
+            </div>
+
+
+            <div class="link-container">
+                <a class="link" href="#"><i class="fas fa-dashboard"></i><span class="text-link">Dashboard</span></a>
+                <a class="link" href="#"><i class="fas fa-list"></i><span class="text-link">Category</span></a>
+                <a class="link" href="#"><i class="fas fa-copyright"></i><span class="text-link">Brand</span></a>
+                <a class="link" href="#"><i class="fas fa-car"></i><span class="text-link">Cars</span></a>
+                <a class="link" href="#"><i class="fas fa-calendar"></i><span class="text-link">Rentals</span></a>
+                <a class="link" href="#"><i class="fas fa-chart-simple"></i><span class="text-link">Reports</span></a>
+                <a class="link" href="#"><i class="fas fa-users"></i><span class="text-link">Manage Users</span></a>
+            </div>
+        </div>
+
+        <main>
+            <div class="main-header">
+                <div class="toggle-icon-container">
+                    <i class="fas fa-bars" id="toggleIcon"></i>
+                    <i class="fas fa-bars" id="toggleIconSmallDev"></i>
+                </div>
+                <div class="user-dropdown-container">
+                    <div class="user-dropdown-info" id="user-dropdown">
+                        <span>John Doe</span>
+                        <i class="fas fa-caret-down"></i>
+                    </div>
+                    <div class="user-dropdown-items" id="user-dropdown-items">
+                        <div class="user-dropdown-item"><a href="#">Change Password</a></div>
+                        <div class="user-dropdown-item"><a href="#">Account Settings</a></div>
+                        <div class="user-dropdown-item"><a href="#">Logout</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="category-container">
+
+                    <div class="page-title-container">
+                        <h3>Category</h3>
+                    </div>
+
+                    <div class="session-message-container">
+
+                        <div class="session-message-success bg-success">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quod.</span>
+                            <button id="closeSessionMessage"><i class="fas fa-x"></i></button>
+                        </div>
+
+                        <div class="session-message-error bg-danger">
+                            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, quod.</span>
+                            <button id="closeSessionMessage"><i class="fas fa-x"></i></button>
+                        </div>
+
+                    </div>
+
+                    <div class="category-table-container">
+                        <div class="table-button-header-container">
+                            <a class="bg-main" href="#">Add Category</a>
+                        </div>
+                        <div class="table-container">
+                            <table id="example" class="display" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011-04-25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011-07-25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009-01-12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
