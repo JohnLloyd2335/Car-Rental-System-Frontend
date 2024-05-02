@@ -41,5 +41,12 @@ $(document).ready(function () {
         mainContainer.css('display', 'inline-block');
     });
 
+    //Close session message
+    $(".session-message-container").on('click', '#closeSessionMessage', function () {
+        let sessionMessageContainer = $('.session-message-container');
+
+        sessionMessageContainer.toggleClass('show-session-message');
+    });
+
 
 });
