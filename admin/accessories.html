@@ -29,8 +29,8 @@
             </div>
 
 
-            <div class="link-container"> <a class="link" href="#"><i class="fas fa-dashboard"></i><span
-                        class="text-link">Dashboard</span></a>
+            <div class="link-container">
+                <a class="link" href="#"><i class="fas fa-dashboard"></i><span class="text-link">Dashboard</span></a>
                 <a class="link" href="#"><i class="fas fa-list"></i><span class="text-link">Category</span></a>
                 <a class="link" href="#"><i class="fas fa-copyright"></i><span class="text-link">Brand</span></a>
                 <a class="link" href="#"><i class="fas fa-gear"></i><span class="text-link">Accessories</span></a>
@@ -61,10 +61,10 @@
             </div>
 
             <div class="main-content">
-                <div class="category-container">
+                <div class="accessories-container">
 
                     <div class="page-title-container">
-                        <h3>Add Category</h3>
+                        <h3>Accessories</h3>
                     </div>
 
                     <div class="session-message-container show-session-message">
@@ -81,21 +81,53 @@
 
                     </div>
 
-                    <div class="add-category-form-container">
-                        <div class="category-form-group">
-                            <label>Name</label>
-                            <input type="text" name="name" class="input-error">
-                            <div class="validation-error-container">
-                                <p>Field name is required.</p>
-                            </div>
+                    <div class="accessories-table-container">
+                        <div class="table-button-header-container">
+                            <a class="bg-main" href="#">Add Accessories</a>
                         </div>
-                        <div class="category-form-group">
-                            <a class="bg-dark">Cancel</a>
-                            <button class="bg-primary">Save</button>
+                        <div class="table-container">
+                            <table id="example" class="display" style="width:100%">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Position</th>
+                                        <th>Office</th>
+                                        <th>Age</th>
+                                        <th>Start date</th>
+                                        <th>Salary</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Tiger Nixon</td>
+                                        <td>System Architect</td>
+                                        <td>Edinburgh</td>
+                                        <td>61</td>
+                                        <td>2011-04-25</td>
+                                        <td>$320,800</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Garrett Winters</td>
+                                        <td>Accountant</td>
+                                        <td>Tokyo</td>
+                                        <td>63</td>
+                                        <td>2011-07-25</td>
+                                        <td>$170,750</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ashton Cox</td>
+                                        <td>Junior Technical Author</td>
+                                        <td>San Francisco</td>
+                                        <td>66</td>
+                                        <td>2009-01-12</td>
+                                        <td>$86,000</td>
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
                         </div>
                     </div>
-
-
                 </div>
             </div>
         </main>
