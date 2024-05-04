@@ -7,12 +7,16 @@
     font-family: "Montserrat", sans-serif;
 }
 
+body {
+    height: 100%;
+}
+
 .dashboard-container {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 
@@ -21,7 +25,7 @@
     border: 1px solid #0000;
     background-color: #1B1D27;
     max-width: 250px;
-    height: 100%;
+    height: 1000px;
     padding: 10px 0;
 }
 
@@ -213,6 +217,7 @@
     align-items: start;
     justify-content: center;
     width: 100%;
+    height: 100%;
 }
 
 .dashboard-container main .main-content .cards-container {
@@ -1195,6 +1200,613 @@
 }
 
 /* Accessories */
+
+/* Cars */
+.main-content .car-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 18px;
+    width: 100%;
+    height: 100%;
+}
+
+.main-content .car-table-container {
+    width: 80vw;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+
+.main-content .car-table-container .table-container {
+    width: 100%;
+}
+
+.main-content .car-table-container .table-button-header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.main-content .car-table-container .table-button-header-container:nth-child(1) {
+    flex: 1;
+}
+
+.main-content .car-table-container .table-button-header-container .table-filter-container {
+    flex: 5;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 8px;
+}
+
+
+.main-content .car-table-container .table-button-header-container .table-filter-container>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2px;
+}
+
+
+
+.main-content .car-table-container .table-button-header-container .table-filter-container>div label {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2b2b22;
+}
+
+.main-content .car-table-container .table-button-header-container .table-filter-container>div select {
+    width: 250px;
+    height: 45px;
+    font-size: 18px;
+    padding-left: 5px;
+    font-weight: 500;
+    border: 1px solid #eee8e8;
+    color: #2b2828;
+}
+
+.main-content .car-table-container .table-button-header-container a {
+    font-size: 20px;
+    padding: 10px 15px;
+    color: #ffff;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+}
+
+
+.main-content .car-table-container .table-button-header-container a:hover {
+    background-color: #F88D1D;
+}
+
+.main-content .car-table-container .table-container table {
+    width: 100%;
+}
+
+.main-content .car-container .add-car-form-container {
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #2b2828;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main-content .car-container .add-car-form-container .car-form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    gap: 8px;
+}
+
+
+.main-content .car-container .add-car-form-container .car-form-group .car-form-group-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 3px;
+}
+
+
+.main-content .car-container .add-car-form-container .car-form-group .car-form-group-column label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b2828;
+}
+
+.main-content .car-container .add-car-form-container .car-form-group .car-form-group-column input {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+
+.main-content .car-container .add-car-form-container .car-form-group .car-form-group-column input[type="number"] {
+    padding-right: 10px;
+}
+
+.main-content .car-container .add-car-form-container .car-form-group input[type="file"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.main-content .car-container .add-car-form-container .car-form-group textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    resize: none;
+}
+
+.main-content .car-container .add-car-form-container .car-form-group .car-form-group-column select {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+/* Style the dropdown container */
+.select2-container {
+    width: 300px;
+    border: 1px solid red;
+    /* Adjust width as needed */
+}
+
+/* Style the selection area */
+.select2-selection--multiple {
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+/* Style the selected options */
+.select2-selection__choice {
+    color: #2b2b22;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: none;
+    outline: none;
+}
+
+/* Style the search input */
+.select2-search__field {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+/* Style the dropdown list */
+.select2-results__option {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Style the dropdown list on hover */
+.select2-results__option:hover {
+    background-color: #f0f0f0;
+}
+
+
+.main-content .car-container .add-car-form-container .car-form-group:last-child {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+
+.main-content .car-container .add-car-form-container .car-form-group:nth-child(2) .car-form-group-column:nth-child(3) {
+    flex: 2;
+}
+
+.main-content .car-container .add-car-form-container .car-form-group a {
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+
+.main-content .car-container .add-car-form-container .car-form-group a:hover {
+    opacity: 95%;
+}
+
+.main-content .car-container .add-car-form-container .car-form-group button {
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.main-content .car-container .add-car-form-container .car-form-group button:hover {
+    opacity: 95%;
+}
+
+.main-content .car-container .edit-car-form-container {
+    width: 100%;
+    padding: 30px 50px;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px #2b2828;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main-content .car-container .edit-car-form-container .car-form-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 100%;
+    gap: 8px;
+}
+
+
+.main-content .car-container .edit-car-form-container .car-form-group .car-form-group-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 3px;
+}
+
+
+.main-content .car-container .edit-car-form-container .car-form-group .car-form-group-column label {
+    font-size: 20px;
+    font-weight: 600;
+    color: #2b2828;
+}
+
+.main-content .car-container .edit-car-form-container .car-form-group .car-form-group-column input {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+
+.main-content .car-container .edit-car-form-container .car-form-group .car-form-group-column input[type="number"] {
+    padding-right: 10px;
+}
+
+.main-content .car-container .edit-car-form-container .car-form-group input[type="file"] {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    padding: 10px 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+.main-content .car-container .edit-car-form-container .car-form-group textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    resize: none;
+}
+
+.main-content .car-container .edit-car-form-container .car-form-group .car-form-group-column select {
+    width: 100%;
+    height: 50px;
+    border-radius: 3px;
+    padding-left: 8px;
+    font-size: 18px;
+}
+
+/* Style the dropdown container */
+.select2-container {
+    width: 300px;
+    border: 1px solid red;
+    /* Adjust width as needed */
+}
+
+/* Style the selection area */
+.select2-selection--multiple {
+    border: 1px solid #ccc;
+    padding: 0 5px;
+    border-radius: 5px;
+    height: 50px;
+}
+
+/* Style the selected options */
+.select2-selection__choice {
+    color: #2b2b22;
+    border: none;
+    border-radius: 3px;
+    padding: 2px 5px;
+    margin-right: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.select2-container--default .select2-selection--multiple {
+    border: none;
+    outline: none;
+}
+
+/* Style the search input */
+.select2-search__field {
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 100%;
+}
+
+/* Style the dropdown list */
+.select2-results__option {
+    padding: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Style the dropdown list on hover */
+.select2-results__option:hover {
+    background-color: #f0f0f0;
+}
+
+
+.main-content .car-container .edit-car-form-container .car-form-group:last-child {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+}
+
+
+.main-content .car-container .edit-car-form-container .car-form-group a {
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+
+.main-content .car-container .edit-car-form-container .car-form-group a:hover {
+    opacity: 95%;
+}
+
+.main-content .car-container .edit-car-form-container .car-form-group button {
+    padding: 10px 15px;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+}
+
+.main-content .car-container .edit-car-form-container .car-form-group button:hover {
+    opacity: 95%;
+}
+
+@media only screen and (max-width: 667px) {
+
+    .main-content .car-table-container .table-button-header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .main-content .car-table-container .table-button-header-container .table-filter-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .main-content .car-table-container .table-button-header-container .table-filter-container>div label {
+        text-align: center;
+        width: 100%;
+    }
+
+    .main-content .car-container .add-car-form-container {
+        padding: 10px;
+        flex: 1;
+        box-shadow: none;
+    }
+
+    .main-content .car-container .add-car-form-container .car-form-group {
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .main-content .car-container .add-car-form-container .car-form-group .car-form-group-column {
+        align-items: start;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .main-content .car-container .add-car-form-container .car-form-group label {
+        font-size: 18px;
+    }
+
+    .main-content .car-container .add-car-form-container .car-form-group input {
+        font-size: 16px;
+    }
+
+
+    .main-content .car-container .add-car-form-container .car-form-group a {
+        font-size: 12px;
+    }
+
+    .main-content .car-container .add-car-form-container .car-form-group button {
+        font-size: 12px;
+    }
+
+    .main-content .car-container .edit-car-form-container {
+        padding: 10px;
+        flex: 1;
+        box-shadow: none;
+    }
+
+    .main-content .car-container .edit-car-form-container .car-form-group {
+        flex: 1;
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 100%;
+    }
+
+    .main-content .car-container .edit-car-form-container .car-form-group .car-form-group-column {
+        align-items: start;
+        width: 100%;
+        padding: 5px;
+    }
+
+    .main-content .car-container .edit-car-form-container .car-form-group label {
+        font-size: 18px;
+    }
+
+    .main-content .car-container .edit-car-form-container .car-form-group input {
+        font-size: 16px;
+    }
+
+
+    .main-content .car-container .edit-car-form-container .car-form-group a {
+        font-size: 12px;
+    }
+
+    .main-content .car-container .edit-car-form-container .car-form-group button {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width : 667px) and (max-width: 999px) {
+
+    .main-content .car-table-container .table-button-header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .main-content .car-table-container .table-button-header-container .table-filter-container {
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+    }
+
+    .main-content .car-table-container .table-button-header-container .table-filter-container>div label {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .main-content .car-container .add-car-form-container {
+        padding: 10px;
+        flex: 1;
+        box-shadow: none;
+        flex-wrap: wrap;
+    }
+
+    .main-content .car-container .add-car-form-container .car-form-group {
+        flex: 1;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+
+    .main-content .car-container .add-car-form-container .car-form-group .car-form-group-column {
+        width: 50%;
+        display: flex;
+    }
+
+    .main-content .car-container .edit-car-form-container {
+        padding: 10px;
+        flex: 1;
+        box-shadow: none;
+        flex-wrap: wrap;
+    }
+
+    .main-content .car-container .edit-car-form-container .car-form-group {
+        flex: 1;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+
+    .main-content .car-container .edit-car-form-container .car-form-group .car-form-group-column {
+        width: 50%;
+        display: flex;
+    }
+}
+
+/* Cars */
 
 /* Default Style for all pages */
 
