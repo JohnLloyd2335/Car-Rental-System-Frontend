@@ -170,3 +170,21 @@ function markAsCompletedRental(id) {
 
     });
 }
+
+function editPenalty(id) {
+    Swal.fire({
+        title: "Edit Penalty",
+        text: "",
+        icon: "warning",
+        html: "<input type='number' placeholder='Penalty' style='width: 100%; height: 40px;resize:none;padding-left: 10px; padding-top:5px;font-size:18px; margin-top: 30px'/>",
+        confirmButtonText: "Save",
+        showCancelButton: true,
+    }).then((result) => {
+        if (result.isConfirmed) {
+            console.log("confirmed")
+        }
+        else {
+            console.log("cancelled")
+        }
+    });
+}
