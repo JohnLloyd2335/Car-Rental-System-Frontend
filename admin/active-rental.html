@@ -63,7 +63,7 @@
                 <div class="car-container">
 
                     <div class="page-title-container">
-                        <h3>Cars</h3>
+                        <h3>Active Rental</h3>
                     </div>
 
                     <div class="session-message-container show-session-message">
@@ -82,30 +82,27 @@
 
                     <div class="car-table-container">
                         <div class="table-button-header-container">
-                            <a class="bg-main" href="#">Add Car</a>
+
                             <div class="table-filter-container">
                                 <div>
-                                    <label>Category</label>
-                                    <select name="category">
-                                        <option value="Category 1">Category 1</option>
+                                    <label>Amount</label>
+                                    <select name="amount">
+                                        <option value="ASC">ASC</option>
+                                        <option value="DESC">DESC</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <label>Brand</label>
-                                    <select name="brand">
-                                        <option value="Brand 1">Brand 1</option>
+                                    <label>No of Rental Days</label>
+                                    <select name="no_of_rental_days">
+                                        <option value="ASC">ASC</option>
+                                        <option value="DESC">DESC</option>
                                     </select>
                                 </div>
                                 <div>
-                                    <label>Availability</label>
-                                    <select name="availability">
-                                        <option value="Available">Available</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <label>More Options</label>
-                                    <select name="more_options">
-                                        <option value="Price : High to Low">Price : High to Low</option>
+                                    <label>Rental Date</label>
+                                    <select name="rental_date">
+                                        <option value="ASC">ASC</option>
+                                        <option value="DESC">DESC</option>
                                     </select>
                                 </div>
                             </div>
@@ -143,9 +140,9 @@
                                         <td>Ashton Cox</td>
                                         <td>Junior Technical Author</td>
                                         <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009-01-12</td>
-                                        <td><button onclick="setCarUnavail(1)">Set Car Unavailable</button></td>
+                                        <td><a href="">View</a></td>
+                                        <td><button onclick="markAsCompletedRental(1)">Mark as Completed</button></td>
+                                        <td><a href="">Compute Partial</a></td>
                                     </tr>
 
                                 </tbody>
