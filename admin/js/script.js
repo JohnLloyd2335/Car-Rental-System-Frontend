@@ -188,3 +188,20 @@ function editPenalty(id) {
         }
     });
 }
+
+function markAsPaid(id) {
+    Swal.fire({
+        title: "Warning",
+        text: "Are you sure you want to mark as paid?",
+        icon: "warning",
+        showCancelButton: true,
+        confirmButtonText: "Yes"
+    }).then((result) => {
+        if (result.isConfirmed) {
+            console.log("confirmed");
+        }
+        else {
+            console.log("cancelled");
+        }
+    });
+}
