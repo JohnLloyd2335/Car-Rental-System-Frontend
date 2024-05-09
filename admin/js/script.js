@@ -73,6 +73,7 @@ $(document).ready(function () {
         }
     });
 
+
     //view car tabs
 
     //car tabs
@@ -90,7 +91,20 @@ $(document).ready(function () {
         $("#car-description-content").show();
     });
 
+    //report start date change - set min date of end date
+    $("#reportFilterStartDate").change(() => {
+        let reportFilterEndDate = $("#reportFilterEndDate");
+        reportFilterEndDate.val('');
+        reportFilterEndDate.attr('readonly', false);
+        let endDateMinDate = $("#reportFilterStartDate").val();
+        reportFilterEndDate.attr('min', endDateMinDate);
+    });
 
+    let rentalReportSelectField = $("#rentalReportSelectField");
+
+    for (let i = 2000; i <= 2099; i++) {
+        rentalReportSelectField.append(`<option value='${i}'>${i}</option>`);
+    }
 
 });
 
@@ -205,3 +219,41 @@ function markAsPaid(id) {
         }
     });
 }
+
+function clearRevenueData() {
+
+    let revenueStartDate = $("#reportFilterStartDate");
+    let revenueEndDate = $("#reportFilterEndDate");
+    let revenueAmount = $("#revenueAmount");
+    let revenuePenaltyAmount = $("#revenuePenaltyAmount");
+    let revenueTotalAmount = $("#revenueTotalAmount");
+    let rentalPDF = $(".rentalPDF");
+
+    if (rentalPDF.attr('disabled', false)) {
+        rentalPDF.attr('disabled', true);
+    }
+
+    revenueStartDate.val("");
+    revenueEndDate.val("");
+    revenueAmount.val("0.00");
+    revenuePenaltyAmount.val("0.00");
+    revenueTotalAmount.val("0.00");
+
+    //remove data table data
+}
+
+function clearRentalReportData() {
+    let rentalReportSelectField = $("#rentalReportSelectField");
+    let totalRentalsReport = $("#totalRentalsReport");
+    let rentalPDF = $(".rentalPDF");
+
+    rentalReportSelectField.val("--SELECT YEAR--");
+    totalRentalsReport.val("0");
+
+    if (rentalPDF.attr('disabled', false)) {
+        rentalPDF.attr('disabled', true);
+    }
+
+    //remove data table data
+}
+
